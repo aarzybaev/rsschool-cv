@@ -93,7 +93,8 @@ body {
   }
 
   .section-profile {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
   }
 
   .section-profile h1 {
@@ -125,7 +126,7 @@ body {
 
   .block-profile {
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
   }
 
   hr {
