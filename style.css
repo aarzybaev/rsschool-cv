@@ -27,15 +27,7 @@ body {
   }
 
 .nav {
-    
-}
-
-.header {
-    
-}
-
-.main {
-    
+    background-color: #829985;
 }
 
 .footer {
@@ -81,7 +73,7 @@ body {
   }
 
   .nav-list a {
-    color: #829985;
+    color: #fff;
     text-decoration: none;  
     transition: color 0.5s;
   }
