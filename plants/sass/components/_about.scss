@@ -4,3 +4,31 @@
     height: 479px;
     display: inline-block;
 }
+
+.about__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 93px 109px;
+}
+
+.about__content {
+    width: 605px;
+    height: 350px;
+}
+
+.about-primary {
+    color: $color-primary;
+    font-size: 4.0rem;
+    font-weight: 400;
+    line-height: 5.2rem;
+    letter-spacing: 0em;
+}
+
+.about-sorbus {
+    color: $color-sorbus;
+    font-size: 4.0rem;
+    font-weight: 400;
+    line-height: 5.2rem;
+    letter-spacing: 0em;
+}
