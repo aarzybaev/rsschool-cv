@@ -4,3 +4,102 @@
     height: 175px;
     display: inline-block;
 }
+
+.layout-2-column__prices {
+    width: 1440px;
+    height: 560px;
+    display: flex;
+    justify-content: center;    
+}
+.prices__col {
+    padding: 0;
+    margin: 0;
+}
+
+.prices__item {
+    width: 611px;
+    height: 405px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+.prices__title {
+    font-size: 4.0rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    letter-spacing: 0em;
+    color: $color-black;
+    padding: 0;
+    margin: 0;
+}
+
+.slogan__title {
+    font-size: 4.0rem;
+    font-weight: 700;
+    line-height: 5.0rem;
+    letter-spacing: 0em;
+    color: $color-black;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+.prices-type {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 332px;
+    height: 284px;
+    border: 1px solid $color-border;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.prices-type__item {
+    list-style: none;
+    width: 170px;
+    height: 50px;
+    background-color: $color-background;
+    border-radius: 20px;
+    font-size: 2.0rem;
+    font-weight: 700;
+    line-height: 2.0rem;
+    color: $color-black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    margin-top: 34px;
+    
+}
+
+.prices-type__icon {
+    background-image: url(img/accordion_btn.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;    
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 611px;
+    height: 405px;    
+}
+
+.slogan-button {
+    width: 162px;
+    height: 50px;
+    background: $color-white;
+    color: $color-orange;
+    border-radius: 5px;
+    border: 1px solid $color-orange;    
+    font-size: 2.0rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+}

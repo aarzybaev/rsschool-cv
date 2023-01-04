@@ -76,8 +76,8 @@
     line-height: 2.6rem;
     letter-spacing: 0em;
     background: $color-background;
-    color: $color-sorbus;
-    border: 1px solid $color-sorbus;
+    color: $color-orange;
+    border: 1px solid $color-orange;
     border-radius: 5px;
     padding: 12px 40px;
 }
@@ -95,12 +95,14 @@
 }
 
 .service-card__title {
-    color: $color-sorbus;
+    color: $color-orange;
     font-size: 2.0rem;
     font-weight: 700;
     line-height: 2.0rem;
     letter-spacing: 0em;
     text-align: center;
+    padding: 10px 0;
+    margin: 0;
 }
 
 .service-card__description {
@@ -110,4 +112,5 @@
     line-height: 2.0rem;
     letter-spacing: 0em;
     text-align: center;
+    margin: 0;
 }
