@@ -173,9 +173,7 @@ p {
 
 .layout-3-column {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin: auto;
 }
 
 .layout-2-column {
@@ -346,6 +344,7 @@ p {
 }
 
 .layout-3-column__service {
+  justify-content: space-between;
   padding: 0 109px 66px 109px;
 }
 
@@ -378,10 +377,9 @@ p {
 }
 
 .layout-2-column__prices {
+  justify-content: center;
   width: 1440px;
   height: 560px;
-  display: flex;
-  justify-content: center;
 }
 
 .prices__col {
@@ -492,6 +490,7 @@ p {
   display: flex;
   justify-content: space-around;
   padding: 60px 109px 0 109px;
+  height: 497px;
 }
 
 .contact__title {

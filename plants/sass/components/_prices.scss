@@ -6,11 +6,11 @@
 }
 
 .layout-2-column__prices {
+    justify-content: center;
     width: 1440px;
-    height: 560px;
-    display: flex;
-    justify-content: center;    
+    height: 560px;        
 }
+
 .prices__col {
     padding: 0;
     margin: 0;
