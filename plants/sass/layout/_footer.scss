@@ -1,0 +1,60 @@
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 130px;
+    padding: 40px 109px;
+}
+
+.social {
+    width: 188px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social__instagram-ico {
+    background-image: url(img/instagram.png);
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+.social__fb-ico {
+    background-image: url(img/fb.png);
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+.social__tw-ico {
+    background-image: url(img/tw.png);
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+.social__pinterest-ico {
+    background-image: url(img/pinterest.png);
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+.footer__year-github {
+    font-size: 2.0rem;
+    font-weight: 400;
+    line-height: 5.0rem;
+    letter-spacing: 0em;
+    color: $color-black;
+}
+
+.footer__rss {
+    font-size: 2.0rem;
+    font-weight: 400;
+    line-height: 5.0rem;
+    letter-spacing: 0em;
+    color: $color-black;
+}
