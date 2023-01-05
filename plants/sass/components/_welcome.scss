@@ -6,12 +6,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 62px 109px 62px 128px;
+    padding: 62px 109px 62px 128px;    
 }
 
 .welcome__content {
     width: 549px;
     height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .welcome__img {
@@ -19,14 +23,6 @@
     width: 448px;
     height: 407px;
     display: inline-block;
-}
-
-.welcome-primary {
-    color: $color-primary;
-}
-
-.welcome-secondary {
-    color: $color-secondary;
 }
 
 .welcome__button {
@@ -38,7 +34,5 @@
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.0rem;
-    letter-spacing: 0em;
     text-align: center;
-
 }
