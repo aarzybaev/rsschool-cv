@@ -1,0 +1,48 @@
+.header {
+    background: $color-background;
+    padding: 42px 0 42px 0;
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 109px 0 112px;
+}
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 5.0rem;
+    letter-spacing: 0em;
+}
+
+.navigation__link {
+    list-style: none;
+    padding: 0 23px 0 23px;
+}
+
+.link {
+    text-decoration: none;
+    color: $color-link;
+}
+.navigation__link_active {
+    color: $color-orange;
+}
+.logo {
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Inika', Verdana;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo__img {
+    background-image: url(img/logo.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;    
+}
+

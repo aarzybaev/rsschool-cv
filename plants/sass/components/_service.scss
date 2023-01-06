@@ -1,0 +1,123 @@
+.service {
+    background: $color-background;
+}
+.service-card {
+    padding-bottom: 36px;
+    margin-bottom: 55px;
+    border: 1px solid $color-border;
+    border-radius: 20px;
+    
+}
+.service-card_img1 {
+    background-image: url(img/services/service_item-1.png);
+    width: 329px;
+    height: 350px;
+    display: inline-block;
+}
+
+.service-card_img2 {
+    background-image: url(img/services/service_item-2.png);
+    width: 329px;
+    height: 350px;
+    display: inline-block;
+}
+
+.service-card_img3 {
+    background-image: url(img/services/service_item-3.png);
+    width: 329px;
+    height: 350px;
+    display: inline-block;
+}
+
+.service-card_img4 {
+    background-image: url(img/services/service_item-4.png);
+    width: 329px;
+    height: 350px;
+    display: inline-block;
+}
+
+.service-card_img5 {
+    background-image: url(img/services/service_item-5.png);
+    width: 329px;
+    height: 350px;
+    display: inline-block;
+}
+
+.service-card_img6 {
+    background-image: url(img/services/service_item-6.png);
+    width: 329px;
+    height: 350px;
+    display: inline-block;
+}
+
+.service__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 324px 90px 109px;
+}
+
+.service__title {
+    color: $color-primary;
+    font-size: 4.0rem;
+    font-weight: 400;
+    line-height: 5.2rem;
+    letter-spacing: 0em;
+    width: 306px;
+    height: 94px;
+    display: inline-block;
+}
+
+.service__button {
+    width: 161px;
+    height: 50px;
+    font-size: 2.0rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+    letter-spacing: 0em;
+    background: $color-background;
+    color: $color-orange;
+    border: 1px solid $color-orange;
+    border-radius: 5px;
+    padding: 12px 40px;
+    cursor: pointer;
+}
+
+.service__button:hover {
+    background-color: $color-orange;
+    color: $color-white;
+}
+
+.service-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 560px;
+    height: 50px;
+}
+
+
+.layout-3-column__service {
+    justify-content: space-between;
+    padding: 0 109px 66px 109px;    
+}
+
+.service-card__title {
+    color: $color-orange;
+    font-size: 2.0rem;
+    font-weight: 700;
+    line-height: 2.0rem;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.service-card__description {
+    color: $color-secondary;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.0rem;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}

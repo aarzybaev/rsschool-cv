@@ -1,0 +1,30 @@
+.about__img {
+    background-image: url(img/houseplant\ 1.png);
+    width: 464px;
+    height: 479px;
+    display: inline-block;
+}
+
+.about__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 93px 109px;
+}
+
+.about-title {
+    width: 463px;
+    height: 102px;
+    font-size: 4.0rem;
+    font-weight: 400;
+    line-height: 5.2rem;
+    letter-spacing: 0em;
+}
+
+.about__content {
+    width: 605px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,0 +1,44 @@
+.welcome {
+    background: $color-background;
+}
+
+.welcome__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 62px 109px 62px 128px;    
+}
+
+.welcome__content {
+    width: 549px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.welcome__img {
+    background-image: url(img/leafs.png);
+    width: 448px;
+    height: 407px;
+    display: inline-block;
+}
+
+.welcome__button {
+    background: $color-background;
+    width: 158px;
+    height: 44px;
+    border-radius: 10px;
+    border: 2px solid $color-orange;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.0rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.welcome__button:hover {
+    background-color: $color-orange;
+    color: $color-white;
+}

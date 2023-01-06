@@ -1,0 +1,559 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Inter", Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0em;
+}
+
+p {
+  color: #636060;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  letter-spacing: 0em;
+  margin: 0;
+}
+
+.color-primary {
+  color: #499A18;
+}
+
+.color-secondary {
+  color: #717171;
+}
+
+.color-orange {
+  color: #E06733;
+}
+
+.button {
+  border-color: #E06733;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.header {
+  background: #EDF2EC;
+  padding: 42px 0 42px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 109px 0 112px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 0em;
+}
+
+.navigation__link {
+  list-style: none;
+  padding: 0 23px 0 23px;
+}
+
+.link {
+  text-decoration: none;
+  color: #010201;
+}
+
+.navigation__link_active {
+  color: #E06733;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Inika", Verdana;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo__img {
+  background-image: url(img/logo.png);
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
+  padding: 40px 109px;
+}
+
+.social {
+  width: 188px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__instagram-ico {
+  background-image: url(img/instagram.png);
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+.social__fb-ico {
+  background-image: url(img/fb.png);
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+.social__tw-ico {
+  background-image: url(img/tw.png);
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+.social__pinterest-ico {
+  background-image: url(img/pinterest.png);
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+.footer__year-github {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 0em;
+  color: #000;
+}
+
+.footer__rss {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 0em;
+  color: #000;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.layout-3-column {
+  display: flex;
+  align-items: center;
+}
+
+.layout-2-column {
+  display: flex;
+  align-items: center;
+}
+
+.welcome {
+  background: #EDF2EC;
+}
+
+.welcome__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 62px 109px 62px 128px;
+}
+
+.welcome__content {
+  width: 549px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.welcome__img {
+  background-image: url(img/leafs.png);
+  width: 448px;
+  height: 407px;
+  display: inline-block;
+}
+
+.welcome__button {
+  background: #EDF2EC;
+  width: 158px;
+  height: 44px;
+  border-radius: 10px;
+  border: 2px solid #E06733;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.welcome__button:hover {
+  background-color: #E06733;
+  color: #FFF;
+}
+
+.about__img {
+  background-image: url(img/houseplant\ 1.png);
+  width: 464px;
+  height: 479px;
+  display: inline-block;
+}
+
+.about__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 93px 109px;
+}
+
+.about-title {
+  width: 463px;
+  height: 102px;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 5.2rem;
+  letter-spacing: 0em;
+}
+
+.about__content {
+  width: 605px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service {
+  background: #EDF2EC;
+}
+
+.service-card {
+  padding-bottom: 36px;
+  margin-bottom: 55px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+}
+
+.service-card_img1 {
+  background-image: url(img/services/service_item-1.png);
+  width: 329px;
+  height: 350px;
+  display: inline-block;
+}
+
+.service-card_img2 {
+  background-image: url(img/services/service_item-2.png);
+  width: 329px;
+  height: 350px;
+  display: inline-block;
+}
+
+.service-card_img3 {
+  background-image: url(img/services/service_item-3.png);
+  width: 329px;
+  height: 350px;
+  display: inline-block;
+}
+
+.service-card_img4 {
+  background-image: url(img/services/service_item-4.png);
+  width: 329px;
+  height: 350px;
+  display: inline-block;
+}
+
+.service-card_img5 {
+  background-image: url(img/services/service_item-5.png);
+  width: 329px;
+  height: 350px;
+  display: inline-block;
+}
+
+.service-card_img6 {
+  background-image: url(img/services/service_item-6.png);
+  width: 329px;
+  height: 350px;
+  display: inline-block;
+}
+
+.service__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 324px 90px 109px;
+}
+
+.service__title {
+  color: #499A18;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 5.2rem;
+  letter-spacing: 0em;
+  width: 306px;
+  height: 94px;
+  display: inline-block;
+}
+
+.service__button {
+  width: 161px;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  letter-spacing: 0em;
+  background: #EDF2EC;
+  color: #E06733;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  padding: 12px 40px;
+  cursor: pointer;
+}
+
+.service__button:hover {
+  background-color: #E06733;
+  color: #FFF;
+}
+
+.service-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 560px;
+  height: 50px;
+}
+
+.layout-3-column__service {
+  justify-content: space-between;
+  padding: 0 109px 66px 109px;
+}
+
+.service-card__title {
+  color: #E06733;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.service-card__description {
+  color: #717171;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+
+.slogan__img {
+  background-image: url(img/leafs-2.png);
+  width: 152px;
+  height: 175px;
+  display: inline-block;
+}
+
+.layout-2-column__prices {
+  justify-content: center;
+  width: 1440px;
+  height: 560px;
+}
+
+.prices__col {
+  padding: 0;
+  margin: 0;
+}
+
+.prices__item {
+  width: 611px;
+  height: 405px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.prices__title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+  letter-spacing: 0em;
+  color: #000;
+  padding: 0;
+  margin: 0;
+}
+
+.slogan__title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  letter-spacing: 0em;
+  color: #000;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  width: 452px;
+}
+
+.prices-type {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 332px;
+  height: 284px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.prices-type__item {
+  list-style: none;
+  width: 170px;
+  height: 50px;
+  background-color: #EDF2EC;
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  margin-top: 34px;
+  cursor: pointer;
+}
+
+.prices-type__icon {
+  background-image: url(img/accordion_btn.png);
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 611px;
+  height: 405px;
+}
+
+.slogan-button {
+  width: 162px;
+  height: 50px;
+  background: #FFF;
+  color: #E06733;
+  border-radius: 5px;
+  border: 1px solid #E06733;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  cursor: pointer;
+}
+
+.slogan-button:hover {
+  background-color: #E06733;
+  color: #FFF;
+}
+
+.contact {
+  background: #EDF2EC;
+}
+
+.contact__img {
+  background-image: url(img/contact_woman\ 1.png);
+  width: 400px;
+  height: 497px;
+  display: inline-block;
+}
+
+.contact__wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 109px 0 109px;
+  height: 497px;
+}
+
+.contact__title {
+  font-family: "Inika", Verdana, sans-serif;
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+  letter-spacing: 0em;
+}
+
+.contact-city__container {
+  padding: 0;
+  margin: 111px 0 0 0;
+  width: 450px;
+  height: 50px;
+}
+
+.contact-city__item {
+  background: #D6E7D2;
+  list-style: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  color: #717171;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.contact-city__icon {
+  background-image: url(img/accordion_btn-3.png);
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */
