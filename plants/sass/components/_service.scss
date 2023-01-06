@@ -80,6 +80,12 @@
     border: 1px solid $color-orange;
     border-radius: 5px;
     padding: 12px 40px;
+    cursor: pointer;
+}
+
+.service__button:hover {
+    background-color: $color-orange;
+    color: $color-white;
 }
 
 .service-buttons {

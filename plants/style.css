@@ -171,6 +171,11 @@ p {
   color: #000;
 }
 
+.footer-link {
+  text-decoration: none;
+  color: #000;
+}
+
 .layout-3-column {
   display: flex;
   align-items: center;
@@ -218,6 +223,12 @@ p {
   font-weight: 400;
   line-height: 2rem;
   text-align: center;
+  cursor: pointer;
+}
+
+.welcome__button:hover {
+  background-color: #E06733;
+  color: #FFF;
 }
 
 .about__img {
@@ -334,6 +345,12 @@ p {
   border: 1px solid #E06733;
   border-radius: 5px;
   padding: 12px 40px;
+  cursor: pointer;
+}
+
+.service__button:hover {
+  background-color: #E06733;
+  color: #FFF;
 }
 
 .service-buttons {
@@ -445,6 +462,7 @@ p {
   justify-content: space-between;
   padding: 0 40px;
   margin-top: 34px;
+  cursor: pointer;
 }
 
 .prices-type__icon {
@@ -473,6 +491,12 @@ p {
   font-size: 2rem;
   font-weight: 700;
   line-height: 2.6rem;
+  cursor: pointer;
+}
+
+.slogan-button:hover {
+  background-color: #E06733;
+  color: #FFF;
 }
 
 .contact {
@@ -522,6 +546,7 @@ p {
   font-weight: 400;
   line-height: 4rem;
   letter-spacing: 0.05em;
+  cursor: pointer;
 }
 
 .contact-city__icon {

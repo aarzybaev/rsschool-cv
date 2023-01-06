@@ -74,8 +74,10 @@
     justify-content: space-between;
     padding: 0 40px;
     margin-top: 34px;
-    
-}
+    cursor: pointer;
+    }
+
+
 
 .prices-type__icon {
     background-image: url(img/accordion_btn.png);
@@ -103,4 +105,10 @@
     font-size: 2.0rem;
     font-weight: 700;
     line-height: 2.6rem;
+    cursor: pointer;
+}
+
+.slogan-button:hover {
+    background-color: $color-orange;
+    color: $color-white;
 }
