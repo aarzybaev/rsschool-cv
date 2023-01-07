@@ -1,0 +1,140 @@
+@import "../node_modules/normalize.css/normalize.css";
+.welcome__button, .welcome__description, .welcome__title {
+  font-family: "Inter", Verdana, sans-serif;
+}
+
+.navigation__item, .logo__text {
+  font-family: "Inika", Verdana, sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.logo__img {
+  background-image: url("../img/logo/logo.png");
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+}
+
+.logo__text {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.1rem;
+  letter-spacing: 0rem;
+}
+
+.navigation__wrapper {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 452px;
+  height: 50px;
+}
+
+.navigation__item {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 0rem;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #010201;
+}
+.navigation__link_active {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5rem;
+  letter-spacing: 0rem;
+  font-family: Inika;
+  color: #E06733;
+}
+
+.welcome {
+  background: #EDF2EC;
+}
+
+.welcome__wrapper {
+  padding: 62px 109px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome__text {
+  max-width: 549px;
+  margin: 36px 0 0 0;
+}
+
+.welcome__img {
+  background-image: url("../img/welcome/leafs.png");
+  width: 449px;
+  height: 407px;
+  display: inline-block;
+}
+
+.welcome__title {
+  min-width: 549px;
+  margin: 0;
+  font-size: 4.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5rem;
+  letter-spacing: 0rem;
+  color: #717171;
+}
+.welcome__title_colored {
+  color: #499A18;
+}
+
+.welcome__description {
+  min-width: 525px;
+  margin: 42px 0 0 0;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.5rem;
+  letter-spacing: 0rem;
+  color: #636060;
+}
+
+.welcome__button {
+  padding: 14px 27px;
+  margin: 48px 0 0 0;
+  background: #EDF2EC;
+  border-radius: 10px;
+  border: 2px solid #E06733;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0rem;
+  color: #000;
+}
+
+.wrapper {
+  max-width: 1440px;
+}
+
+.header {
+  background: #EDF2EC;
+}
+
+.header__wrapper {
+  padding: 25px 109px 25px 111px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

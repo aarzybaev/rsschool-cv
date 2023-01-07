@@ -1,0 +1,10 @@
+.header {
+    background: $color-background-section;
+}
+
+.header__wrapper {
+    padding: 25px 109px 25px 111px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
