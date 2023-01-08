@@ -1,0 +1,23 @@
+.navigation__wrapper {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 452px;
+    height: 50px;
+}
+
+.navigation__item {
+    @extend %font-secondary;
+    @include font($height: 5.0rem);
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: $color-nav-link;
+    &_active {
+        @include font($height: 5.0rem, $weight: 700);
+        font-family: Inika;
+        color: $color-secondary;
+    }
+}

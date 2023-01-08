@@ -1,0 +1,11 @@
+.logo__img {
+    background-image: url("../img/logo/logo.png");
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+}
+
+.logo__text {
+    @extend %font-secondary;
+    @include font($height: 2.1rem);
+}
