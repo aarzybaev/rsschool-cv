@@ -3,7 +3,7 @@
   transition: all 0.3s ease-out;
 }
 
-.welcome__button, .welcome__description, .welcome__title, .service-card__description, .service-card__title, .prices__title-contact, .prices__title-content, .prices-item-content__item, .contacts-item-content__item, .about__description {
+.footer__data-data, .footer__rss-rss, .welcome__button, .welcome__description, .welcome__title, .service-card__description, .service-card__title, .prices__title-contact, .prices__title-content, .prices-item-content__item, .contacts-item-content__item, .about__description {
   font-family: "Inter", Verdana, sans-serif;
 }
 
@@ -497,6 +497,71 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer__wrapper {
+  padding: 40px 109px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__inst {
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/footer/inst.png);
+  display: inline-block;
+}
+
+.footer__fb {
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/footer/fb.png);
+  display: inline-block;
+}
+
+.footer__tw {
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/footer/tw.png);
+  display: inline-block;
+}
+
+.footer__pint {
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/footer/pint.png);
+  display: inline-block;
+}
+
+.footer__social-list > * {
+  margin-left: 16px;
+}
+.footer__social-list :first-child {
+  margin-left: 0;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #000;
+}
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__link-social {
+  text-decoration: none;
+}
+
+.footer__data-data, .footer__rss-rss {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 0rem;
 }
 
 .layout-3-column {
