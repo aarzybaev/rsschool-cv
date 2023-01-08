@@ -1,0 +1,67 @@
+.contacts {
+    background: $color-background;
+}
+.contacts__wrapper {
+    padding: 0 109px;
+    display: flex;
+    
+}
+
+.contacts__img {
+    padding-top: 53px;
+}
+
+.contacts__title {
+    margin-left: 113px;
+    padding-top: 60px;
+
+}
+
+.contacts__title-title {
+    text-align: center;
+    @extend %font-secondary;
+    @include font($size: 4.0rem, $weight: 700, $height: 5.2rem);
+    color: $color-primary;
+}
+
+.contacts__city {
+    padding-top: 148px;
+    margin-left: 69px;
+    flex-grow: 1;
+}
+
+.contacts__img-img {
+    width: 400px;
+    height: 497px;
+    background-image: url(../img/contacts/contact_woman.png);
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.contacts-item-content__item {
+    width: 100%;
+    list-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @extend %font-primary;
+    @include font($size: 2.0rem, $height: 4.0rem);
+    color: $color-title;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 17px 5px 20px;
+    background: $color-background-item;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.contacts-item-content { 
+    margin: 0;
+    padding: 0;
+}
+.contacts-item-content__icon {
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/contacts/accordion_btn.png);
+    display: inline-block;
+}
