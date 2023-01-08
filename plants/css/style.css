@@ -3,11 +3,11 @@
   transition: all 0.3s ease-out;
 }
 
-.welcome__button, .welcome__description, .welcome__title, .service-card__description, .service-card__title, .about__description {
+.welcome__button, .welcome__description, .welcome__title, .service-card__description, .service-card__title, .prices__title-contact, .prices__title-content, .prices-item-content__item, .about__description {
   font-family: "Inter", Verdana, sans-serif;
 }
 
-.service-header__button, .service-header__title, .about__title, .navigation__item, .logo__text {
+.service-header__button, .service-header__title, .prices__button, .about__title, .navigation__item, .logo__text {
   font-family: "Inika", Verdana, sans-serif;
 }
 
@@ -117,6 +117,103 @@ button {
   line-height: 3rem;
   letter-spacing: 0rem;
   color: #636060;
+}
+
+.prices__wrapper {
+  padding: 40px 109px 120px 109px;
+}
+
+.prices__content {
+  padding-right: 279px;
+}
+
+.prices-item-content {
+  border-radius: 20px;
+  border: 1px solid #E3E1D5;
+  padding: 34px 41px;
+  margin: 60px 0 0 0;
+}
+.prices-item-content :first-child {
+  margin-top: 0;
+}
+
+.prices-item-content__item {
+  list-style: none;
+  border-radius: 20px;
+  background: #f1f2ec;
+  margin: 32px 0 0;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0rem;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+}
+
+.prices__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.prices-item-content__icon {
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/prices/accordion_btn.png);
+  display: inline-block;
+}
+
+.prices__title-content {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.8rem;
+  letter-spacing: 0rem;
+  color: #000;
+}
+
+.prices__title-contact {
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.8rem;
+  letter-spacing: 0rem;
+  color: #000;
+  text-align: end;
+  padding-left: 50px;
+}
+.prices__title-contact-colored {
+  color: #499A18;
+}
+
+.prices__img {
+  width: 152px;
+  height: 175px;
+  display: inline-block;
+  background-image: url(../img/prices/leafs.png);
+  margin-top: 39px;
+}
+
+.prices__button {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.6rem;
+  letter-spacing: 0rem;
+  background: #fff;
+  border: 1px solid #E06733;
+  color: #E06733;
+  border-radius: 5px;
+  padding: 12px 34px 12px 30px;
+  margin-top: 38px;
+}
+.prices__button:hover {
+  background: #E06733;
+  color: #fff;
 }
 
 .service {
@@ -332,6 +429,15 @@ button {
 }
 .layout-3-column > * {
   flex-basis: 27%;
+}
+
+.layout-2-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-2-column > * {
+  flex-basis: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */

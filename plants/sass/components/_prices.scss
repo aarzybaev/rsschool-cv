@@ -1,0 +1,85 @@
+.prices__wrapper {
+    padding: 40px 109px 120px 109px;
+}
+.prices__content {
+    padding-right: 279px;
+}
+
+.prices-item-content {    
+    border-radius: 20px;
+    border: 1px solid $color-border-gray;
+    padding: 34px 41px;
+    :first-child {
+        margin-top: 0;
+    }
+    margin: 60px 0 0 0;
+
+ }
+
+.prices-item-content__item {
+    list-style: none;
+    border-radius: 20px;
+    background: $color-background;
+    margin: 32px 0 0;
+    @extend %font-primary;
+    @include font($size: 2.0rem, $weight: 700);
+    color: $color-black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+}
+
+.prices__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.prices-item-content__icon {
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/prices/accordion_btn.png);
+    display: inline-block;
+}
+
+.prices__title-content {
+    @extend %font-primary;
+    @include font($size: 4.0rem, $weight: 700, $height: 4.8rem);
+    color: $color-black;
+}
+
+.prices__title-contact {
+    @extend %font-primary;
+    @include font($size: 4.0rem, $weight: 700, $height: 4.8rem);
+    color: $color-black;
+    &-colored {
+        color: $color-primary;
+    }
+    text-align: end;
+    padding-left: 50px;
+}
+
+.prices__img {
+    width: 152px;
+    height: 175px;
+    display: inline-block;
+    background-image: url(../img/prices/leafs.png);
+    margin-top: 39px
+}
+
+.prices__button {
+    @extend %font-secondary;
+    @include font($size: 2.0rem, $weight: 700, $height: 2.6rem);
+    background: $color-white;
+    border: 1px solid $color-secondary;
+    color: $color-secondary;
+    border-radius: 5px;
+    padding: 12px 34px 12px 30px;
+    margin-top: 38px;
+    
+    &:hover {
+        background: $color-secondary;
+        color: $color-white;
+    }
+}
