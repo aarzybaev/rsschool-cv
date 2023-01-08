@@ -1,0 +1,41 @@
+.about {
+    background: $color-white;;
+}
+.about__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 93px 109px 94px 109px;
+}
+
+.about__text {
+   width: 605px;
+}
+
+.about__img {
+    background-image: url("../img/about/houseplant.png");
+    width: 464px;
+    height: 479px;
+    display: inline-block;
+}
+.about__title {
+    @extend %font-secondary;
+    margin: 0 142px 40px 0;
+    @include font($size: 4.0rem, $height: 5.2rem);
+    color: $color-primary;
+    &-colored {
+        color: $color-secondary;
+    }
+}
+
+.about__description {
+    margin: 0;
+    min-width: 463px;
+    @extend %font-primary;
+    @include font($size: 2.0rem, $height: 3.0rem);
+    color: $color-description;
+}
+
+#about-us {
+	scroll-behavior: smooth;
+}

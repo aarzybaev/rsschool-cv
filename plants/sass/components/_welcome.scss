@@ -1,0 +1,58 @@
+.welcome {
+    background: $color-background;
+}
+.welcome__wrapper {
+    padding: 62px 109px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome__text {
+    width: 549px;
+    padding: 36px 0 0 0;
+}
+
+.welcome__img {
+    background-image: url("../img/welcome/leafs.png");
+    width: 449px;
+    height: 407px;
+    display: inline-block;
+}
+
+.welcome__title {
+    @extend %font-primary;
+    @include font($size: 4.5rem, $weight: 700, $height: 5.0rem);
+    color: $color-title;
+    &-colored {
+        color: $color-primary;
+    }
+}
+
+.welcome__description {
+    margin: 42px 0 0 0;
+    @extend %font-primary;
+    @include font($size: 2.0rem, $height: 3.5rem);
+    color: $color-description;
+}
+
+.welcome__button {
+    padding: 14px 27px;
+    margin: 48px 0 0 0;
+    background: $color-background;
+    border-radius: 10px;
+    border: 2px solid $color-secondary;
+    @extend %font-primary;
+    @include font($height: 2.0rem);
+    color: $color-black;
+
+    &:hover {
+        background: $color-secondary;
+        color: $color-white;
+        @extend %transition;
+    }
+
+}
+
+#home {
+	scroll-behavior: smooth;
+}
