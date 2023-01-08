@@ -1,9 +1,13 @@
 @import "../node_modules/normalize.css/normalize.css";
-.welcome__button, .welcome__description, .welcome__title {
+.welcome__button:hover, .service-header__button:hover {
+  transition: all 0.3s ease-out;
+}
+
+.welcome__button, .welcome__description, .welcome__title, .service-card__description, .service-card__title, .about__description {
   font-family: "Inter", Verdana, sans-serif;
 }
 
-.navigation__item, .logo__text {
+.service-header__button, .service-header__title, .about__title, .navigation__item, .logo__text {
   font-family: "Inika", Verdana, sans-serif;
 }
 
@@ -13,6 +17,14 @@ html {
 
 body {
   font-size: 1.6rem;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 .logo__img {
@@ -61,8 +73,182 @@ body {
   color: #E06733;
 }
 
+.about {
+  background: #fff;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 93px 109px 94px 109px;
+}
+
+.about__text {
+  width: 605px;
+}
+
+.about__img {
+  background-image: url("../img/about/houseplant.png");
+  width: 464px;
+  height: 479px;
+  display: inline-block;
+}
+
+.about__title {
+  margin: 0 142px 40px 0;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5.2rem;
+  letter-spacing: 0rem;
+  color: #499A18;
+}
+.about__title-colored {
+  color: #E06733;
+}
+
+.about__description {
+  margin: 0;
+  min-width: 463px;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0rem;
+  color: #636060;
+}
+
+.service {
+  background: #f1f2ec;
+}
+
+.service__wrapper {
+  padding: 90px 109px 66px 109px;
+}
+
+.service-card {
+  margin: 0 0 55px;
+}
+
+.service-card__wrapper {
+  width: 330px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #E3E1D5;
+  background-color: #f1f2ec;
+}
+
+.service-card__img {
+  width: 330px;
+  height: 350px;
+  display: inline-block;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.service-card__title {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0rem;
+  color: #E06733;
+  margin-top: 10px;
+}
+
+.service-card__text-content {
+  width: 100%;
+  padding: 10px 0 36px 0;
+  text-align: center;
+  border: 1px solid #E3E1D5;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.service-card__description {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2 rem;
+  letter-spacing: 0rem;
+  color: #636060;
+  margin: 10px 0 0 0;
+}
+
+.service-card__img-garden-care-1 {
+  background-image: url("../img/service/garden-care-1.jpg");
+}
+
+.service-card__img-planting-1 {
+  background-image: url("../img/service/planting-1.jpg");
+}
+
+.service-card__img-lawn-care {
+  background-image: url("../img/service/lawn-care.jpg");
+}
+
+.service-card__img-planting-2 {
+  background-image: url("../img/service/planting-2.jpg");
+}
+
+.service-card__img-garden-care-2 {
+  background-image: url("../img/service/garden-care-2.jpg");
+}
+
+.service-card__img-planting-3 {
+  background-image: url("../img/service/planting-3.jpg");
+}
+
+.service-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 324px 0px 109px;
+}
+
+.service-header__title {
+  width: 306px;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5.2rem;
+  letter-spacing: 0rem;
+  color: #499A18;
+}
+
+.service-header__button-wrapper {
+  width: 559px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-header__button {
+  padding: 12px 40px;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.6rem;
+  letter-spacing: 0rem;
+  color: #E06733;
+  background: #f1f2ec;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+}
+.service-header__button-active {
+  background: #E06733;
+  color: #fff;
+}
+.service-header__button:hover {
+  background: #E06733;
+  color: #fff;
+}
+
 .welcome {
-  background: #EDF2EC;
+  background: #f1f2ec;
 }
 
 .welcome__wrapper {
@@ -72,8 +258,8 @@ body {
 }
 
 .welcome__text {
-  max-width: 549px;
-  margin: 36px 0 0 0;
+  width: 549px;
+  padding: 36px 0 0 0;
 }
 
 .welcome__img {
@@ -84,8 +270,6 @@ body {
 }
 
 .welcome__title {
-  min-width: 549px;
-  margin: 0;
   font-size: 4.5rem;
   font-style: normal;
   font-weight: 700;
@@ -93,12 +277,11 @@ body {
   letter-spacing: 0rem;
   color: #717171;
 }
-.welcome__title_colored {
+.welcome__title-colored {
   color: #499A18;
 }
 
 .welcome__description {
-  min-width: 525px;
   margin: 42px 0 0 0;
   font-size: 2rem;
   font-style: normal;
@@ -111,7 +294,7 @@ body {
 .welcome__button {
   padding: 14px 27px;
   margin: 48px 0 0 0;
-  background: #EDF2EC;
+  background: #f1f2ec;
   border-radius: 10px;
   border: 2px solid #E06733;
   font-size: 1.6rem;
@@ -121,13 +304,18 @@ body {
   letter-spacing: 0rem;
   color: #000;
 }
+.welcome__button:hover {
+  background: #E06733;
+  color: #fff;
+}
 
 .wrapper {
   max-width: 1440px;
+  margin: auto;
 }
 
 .header {
-  background: #EDF2EC;
+  background: #f1f2ec;
 }
 
 .header__wrapper {
@@ -135,6 +323,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.layout-3-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.layout-3-column > * {
+  flex-basis: 27%;
 }
 
 /*# sourceMappingURL=style.css.map */

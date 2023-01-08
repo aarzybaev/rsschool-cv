@@ -1,5 +1,5 @@
 .welcome {
-    background: $color-background-section;
+    background: $color-background;
 }
 .welcome__wrapper {
     padding: 62px 109px;
@@ -8,11 +8,8 @@
 }
 
 .welcome__text {
-    max-width: 549px;
-    margin: 36px 0 0 0;
-    //display: flex;
-    //flex-direction: column;
-    //justify-content: space-between;
+    width: 549px;
+    padding: 36px 0 0 0;
 }
 
 .welcome__img {
@@ -23,18 +20,15 @@
 }
 
 .welcome__title {
-    min-width: 549px;
-    margin: 0;
     @extend %font-primary;
     @include font($size: 4.5rem, $weight: 700, $height: 5.0rem);
     color: $color-title;
-    &_colored {
+    &-colored {
         color: $color-primary;
     }
 }
 
 .welcome__description {
-    min-width: 525px;
     margin: 42px 0 0 0;
     @extend %font-primary;
     @include font($size: 2.0rem, $height: 3.5rem);
@@ -44,11 +38,17 @@
 .welcome__button {
     padding: 14px 27px;
     margin: 48px 0 0 0;
-    background: $color-background-section;
+    background: $color-background;
     border-radius: 10px;
     border: 2px solid $color-secondary;
     @extend %font-primary;
     @include font($height: 2.0rem);
     color: $color-black;
+
+    &:hover {
+        background: $color-secondary;
+        color: $color-white;
+        @extend %transition;
+    }
 
 }

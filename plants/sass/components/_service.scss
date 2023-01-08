@@ -1,0 +1,118 @@
+.service {
+    background: $color-background;
+}
+.service__wrapper {
+    padding: 90px 109px 66px 109px;
+}
+
+.service-card {
+    margin: 0 0 55px;
+}
+
+.service-card__wrapper {
+    width: 330px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid $color-border-gray;
+    background-color: $color-background;
+}
+
+.service-card__img {
+    width: 330px;
+    height: 350px;
+    display: inline-block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.service-card__title {
+    @extend %font-primary;
+    @include font($size: 2.0rem, $weight: 700);
+    color: $color-secondary;
+    margin-top: 10px;
+}
+
+.service-card__text-content {
+    width: 100%;
+    padding: 10px 0 36px 0;
+    text-align: center;
+    border: 1px solid $color-border-gray;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.service-card__description {
+    @extend %font-primary;
+    @include font($height: 2.0 rem);
+    color: $color-description;
+    margin: 10px 0 0 0;
+}
+
+.service-card__img-garden-care-1 {
+    background-image: url("../img/service/garden-care-1.jpg");
+}
+
+.service-card__img-planting-1 {
+    background-image: url("../img/service/planting-1.jpg");
+}
+
+.service-card__img-lawn-care {
+    background-image: url("../img/service/lawn-care.jpg");
+}
+
+.service-card__img-planting-2 {
+    background-image: url("../img/service/planting-2.jpg");
+}
+
+.service-card__img-garden-care-2 {
+    background-image: url("../img/service/garden-care-2.jpg");
+}
+
+.service-card__img-planting-3 {
+    background-image: url("../img/service/planting-3.jpg");
+}
+
+.service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 324px 0px 109px;
+}
+
+.service-header__title {
+    @extend %font-secondary;
+    width: 306px;
+    @include font($size: 4.0rem, $height: 5.2rem);
+    color: $color-primary;
+    
+}
+
+.service-header__button-wrapper {
+    width: 559px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.service-header__button {
+    padding: 12px 40px;
+    @extend %font-secondary;
+    @include font($size: 2.0rem, $height: 2.6rem);
+    color: $color-secondary;
+    background: $color-background;
+    border: 1px solid $color-secondary;
+    border-radius: 5px;
+    &-active {
+        background: $color-secondary;
+        color: $color-white;
+    }
+    &:hover {
+        background: $color-secondary;
+        color: $color-white;
+        @extend %transition;
+    }
+}
