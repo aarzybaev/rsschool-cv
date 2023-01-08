@@ -36,8 +36,12 @@
 }
 
 .footer__social-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
     >* {
-        margin-left: 16px;
+        margin-left: 20px;
     }
     :first-child {
         margin-left: 0;

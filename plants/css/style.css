@@ -537,8 +537,14 @@ button {
   display: inline-block;
 }
 
+.footer__social-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+}
 .footer__social-list > * {
-  margin-left: 16px;
+  margin-left: 20px;
 }
 .footer__social-list :first-child {
   margin-left: 0;
