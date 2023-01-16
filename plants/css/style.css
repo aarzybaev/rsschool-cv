@@ -28,10 +28,17 @@ button {
   cursor: pointer;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
 .logo__img {
   background-image: url("../img/logo/logo.png");
+  background-repeat: no-repeat;
   width: 22px;
-  height: 22px;
+  height: 29px;
   display: inline-block;
 }
 
@@ -50,6 +57,11 @@ button {
   justify-content: space-between;
   width: 452px;
   height: 50px;
+}
+@media (max-width: 768px) {
+  .navigation__wrapper {
+    padding: 0;
+  }
 }
 
 .navigation__item {
@@ -447,10 +459,22 @@ button {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .welcome__wrapper {
+    padding: 40px 50px 70px 50px;
+    flex-direction: row-reverse;
+  }
+}
 
 .welcome__text {
   width: 549px;
   padding: 36px 0 0 0;
+}
+@media (max-width: 768px) {
+  .welcome__text {
+    width: 346px;
+    padding: 0;
+  }
 }
 
 .welcome__img {
@@ -458,6 +482,15 @@ button {
   width: 449px;
   height: 407px;
   display: inline-block;
+}
+@media (max-width: 768px) {
+  .welcome__img {
+    background-image: url("../img/welcome/leafs-tablet.png");
+    background-repeat: no-repeat;
+    width: 280px;
+    height: 254px;
+    display: inline-block;
+  }
 }
 
 .welcome__title {
@@ -471,6 +504,15 @@ button {
 .welcome__title-colored {
   color: #499A18;
 }
+@media (max-width: 768px) {
+  .welcome__title {
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5rem;
+    letter-spacing: 0rem;
+  }
+}
 
 .welcome__description {
   margin: 42px 0 0 0;
@@ -481,9 +523,19 @@ button {
   letter-spacing: 0rem;
   color: #636060;
 }
+@media (max-width: 768px) {
+  .welcome__description {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: 0rem;
+    margin: 30px 0 0 5px;
+  }
+}
 
 .welcome__button {
-  padding: 14px 27px;
+  padding: 10px 26px;
   margin: 48px 0 0 0;
   background: #f1f2ec;
   border-radius: 10px;
@@ -499,6 +551,11 @@ button {
   background: #E06733;
   color: #fff;
 }
+@media (max-width: 768px) {
+  .welcome__button {
+    margin: 36px 0 0 0;
+  }
+}
 
 #home {
   scroll-behavior: smooth;
@@ -507,6 +564,11 @@ button {
 .wrapper {
   max-width: 1440px;
   margin: auto;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+  }
 }
 
 .header {
@@ -518,6 +580,11 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .header__wrapper {
+    padding: 21px 50px 14px 50px;
+  }
 }
 
 .footer__wrapper {

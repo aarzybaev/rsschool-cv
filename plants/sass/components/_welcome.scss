@@ -5,11 +5,21 @@
     padding: 62px 109px;
     display: flex;
     justify-content: space-between;
+
+    @include media-tablet {
+        padding: 40px 50px 70px 50px;
+        flex-direction: row-reverse;
+    }
 }
 
 .welcome__text {
     width: 549px;
     padding: 36px 0 0 0;
+    
+    @include media-tablet {
+        width: 346px;
+        padding: 0;
+    }
 }
 
 .welcome__img {
@@ -17,6 +27,16 @@
     width: 449px;
     height: 407px;
     display: inline-block;
+
+    @include media-tablet {
+        background-image: url("../img/welcome/leafs-tablet.png");
+        background-repeat: no-repeat;
+        width: 280px;
+        height: 254px;
+        display: inline-block;
+        
+    }
+
 }
 
 .welcome__title {
@@ -26,6 +46,10 @@
     &-colored {
         color: $color-primary;
     }
+
+    @include media-tablet {
+        @include font($size: 3.5rem, $weight: 700, $height: 5.0rem); 
+    }
 }
 
 .welcome__description {
@@ -33,10 +57,15 @@
     @extend %font-primary;
     @include font($size: 2.0rem, $height: 3.5rem);
     color: $color-description;
+
+    @include media-tablet {
+        @include font($size: 1.6rem, $weight: 400, $height: 2.5rem);
+        margin: 30px 0 0 5px; 
+    }
 }
 
 .welcome__button {
-    padding: 14px 27px;
+    padding: 10px 26px;
     margin: 48px 0 0 0;
     background: $color-background;
     border-radius: 10px;
@@ -49,6 +78,10 @@
         background: $color-secondary;
         color: $color-white;
         @extend %transition;
+    }
+
+    @include media-tablet {
+        margin: 36px 0 0 0; 
     }
 
 }
