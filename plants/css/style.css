@@ -361,9 +361,14 @@ button {
 .service__wrapper {
   padding: 90px 109px 66px 109px;
 }
+@media (max-width: 768px) {
+  .service__wrapper {
+    padding: 40px 50px 34px 50px;
+  }
+}
 
 .service-card {
-  margin: 0 0 55px;
+  margin: 0 0 38px;
 }
 
 .service-card__wrapper {
@@ -376,6 +381,12 @@ button {
   border: 1px solid #E3E1D5;
   background-color: #f1f2ec;
 }
+@media (max-width: 768px) {
+  .service-card__wrapper {
+    width: 281px;
+    height: auto;
+  }
+}
 
 .service-card__img {
   width: 330px;
@@ -383,6 +394,12 @@ button {
   display: inline-block;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+@media (max-width: 768px) {
+  .service-card__img {
+    width: 281px;
+    height: 350px;
+  }
 }
 
 .service-card__title {
@@ -394,6 +411,11 @@ button {
   color: #E06733;
   margin-top: 10px;
 }
+@media (max-width: 768px) {
+  .service-card__title {
+    margin: 0;
+  }
+}
 
 .service-card__text-content {
   width: 100%;
@@ -402,6 +424,13 @@ button {
   border: 1px solid #E3E1D5;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+@media (max-width: 768px) {
+  .service-card__text-content {
+    padding-bottom: 20px;
+    border: none;
+    border-top: 1px solid #E3E1D5;
+  }
 }
 
 .service-card__description {
@@ -413,29 +442,64 @@ button {
   color: #636060;
   margin: 10px 0 0 0;
 }
+@media (max-width: 768px) {
+  .service-card__description {
+    padding: 0 10px;
+  }
+}
 
 .service-card__img-garden-care-1 {
   background-image: url("../img/service/garden-care-1.jpg");
+}
+@media (max-width: 768px) {
+  .service-card__img-garden-care-1 {
+    background-image: url("../img/service/garden-care-tablet-1.jpg");
+  }
 }
 
 .service-card__img-planting-1 {
   background-image: url("../img/service/planting-1.jpg");
 }
+@media (max-width: 768px) {
+  .service-card__img-planting-1 {
+    background-image: url("../img/service/planting-tablet-1.jpg");
+  }
+}
 
 .service-card__img-lawn-care {
   background-image: url("../img/service/lawn-care.jpg");
+}
+@media (max-width: 768px) {
+  .service-card__img-lawn-care {
+    background-image: url("../img/service/lawn-care-tablet.jpg");
+  }
 }
 
 .service-card__img-planting-2 {
   background-image: url("../img/service/planting-2.jpg");
 }
+@media (max-width: 768px) {
+  .service-card__img-planting-2 {
+    background-image: url("../img/service/planting-tablet-2.jpg");
+  }
+}
 
 .service-card__img-garden-care-2 {
   background-image: url("../img/service/garden-care-2.jpg");
 }
+@media (max-width: 768px) {
+  .service-card__img-garden-care-2 {
+    background-image: url("../img/service/garden-care-tablet-2.jpg");
+  }
+}
 
 .service-card__img-planting-3 {
   background-image: url("../img/service/planting-3.jpg");
+}
+@media (max-width: 768px) {
+  .service-card__img-planting-3 {
+    background-image: url("../img/service/planting-tablet-3.jpg");
+  }
 }
 
 .service-header {
@@ -443,6 +507,13 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 40px 324px 0px 109px;
+}
+@media (max-width: 768px) {
+  .service-header {
+    padding: 0 0 0 50px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .service-header__title {
@@ -454,15 +525,28 @@ button {
   letter-spacing: 0rem;
   color: #499A18;
 }
+@media (max-width: 768px) {
+  .service-header__title {
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.5rem;
+    letter-spacing: 0rem;
+    width: auto;
+    margin: 60px 412px 43px 0px;
+  }
+}
 
 .service-header__button-wrapper {
   width: 559px;
   display: flex;
   justify-content: space-between;
 }
-
 .service-header__button {
-  padding: 12px 40px;
+  width: 161px;
+  height: 50px;
+  padding: 12px 0px;
+  text-align: center;
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
