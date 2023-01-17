@@ -59,7 +59,7 @@
     color: $color-description;
 
     @include media-tablet {
-        @include font($size: 1.6rem, $weight: 400, $height: 2.5rem);
+        @include font($size: 1.6rem, $height: 2.5rem);
         margin: 30px 0 0 5px; 
     }
 }

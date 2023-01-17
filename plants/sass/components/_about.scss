@@ -6,10 +6,18 @@
     justify-content: space-between;
     align-items: center;
     padding: 93px 109px 94px 109px;
+
+    @include media-tablet {
+        padding: 40px 50px 94px 50px;
+        flex-direction: column;
+    }
 }
 
 .about__text {
    width: 605px;
+   @include media-tablet {
+    width: 668px;
+   }
 }
 
 .about__img {
@@ -17,6 +25,12 @@
     width: 464px;
     height: 479px;
     display: inline-block;
+
+    @include media-tablet {
+        background-image: url("../img/about/houseplant-tablet.png");
+        width: 250px;
+        height: 258px;
+    }
 }
 .about__title {
     @extend %font-secondary;
@@ -26,14 +40,26 @@
     &-colored {
         color: $color-secondary;
     }
+
+    @include media-tablet {
+            margin: 0 0 51px 0;
+            @include font($size: 3.5rem, $height: 4.5rem, $weight: 400);
+            padding: 0 140px;
+            text-align: center;
+    }
 }
 
 .about__description {
     margin: 0;
-    min-width: 463px;
+    width: 463px;
     @extend %font-primary;
     @include font($size: 2.0rem, $height: 3.0rem);
     color: $color-description;
+
+    @include media-tablet {
+        width: auto;
+        margin-bottom: 70px;
+    }
 }
 
 #about-us {
