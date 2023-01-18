@@ -4,7 +4,7 @@
 .contacts__wrapper {
     padding: 0 109px;
     display: flex;
-
+    
     @include media-tablet {
         flex-direction: column;
         align-items: center;
@@ -14,6 +14,7 @@
 
 .contacts__img {
     padding-top: 53px;
+
     @include media-tablet {
         padding: 0px;
         order: 3;
@@ -24,13 +25,11 @@
 .contacts__title {
     margin-left: 113px;
     padding-top: 60px;
-    @include media-tablet {
-        margin: 0;
-        padding: 0;
-    }
+    
     @include media-tablet {
         order: 1;
-        margin-top: 40px;
+        margin: 40px 0 0 0;
+        padding: 0;
     }
 
 }

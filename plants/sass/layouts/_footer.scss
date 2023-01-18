@@ -1,10 +1,31 @@
 .footer__wrapper {
     padding: 40px 109px;
+
+    @include media-tablet {
+        padding: 0;
+    }
 }
 .footer__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include media-tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer__data {
+    @include media-tablet {
+        padding-top: 33px;
+    }
+}
+
+.footer__rss {
+    @include media-tablet {
+        padding-top: 15px;
+    }
 }
 
 .footer__inst {
@@ -47,6 +68,11 @@
     :first-child {
         margin-left: 0;
     }
+
+    @include media-tablet {
+        padding-top: 25px;
+        padding-bottom: 24px;
+    }
 }
 
 .footer__link {
@@ -63,5 +89,9 @@
 
  .footer__data-data, .footer__rss-rss {
     @extend %font-primary;
-    @include font($size: 2.0rem, $height: 5.0rem);
+    @include font($size: 2.0rem, $height: 5.0rem);  
+    
+    @include media-tablet {
+        @include font($size: 2.0rem, $height: 2.4rem); 
+    }
 }
