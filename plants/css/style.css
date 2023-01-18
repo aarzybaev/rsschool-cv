@@ -253,19 +253,34 @@ button {
 .prices__wrapper {
   padding: 40px 109px 120px 109px;
 }
+@media (max-width: 768px) {
+  .prices__wrapper {
+    padding: 40px 50px 92px 50px;
+  }
+}
 
 .prices__content {
   padding-right: 279px;
+}
+@media (max-width: 768px) {
+  .prices__content {
+    padding: 0;
+  }
 }
 
 .prices-item-content {
   border-radius: 20px;
   border: 1px solid #E3E1D5;
-  padding: 34px 41px;
+  padding: 33px 41px 32px 41px;
   margin: 60px 0 0 0;
 }
 .prices-item-content :first-child {
   margin-top: 0;
+}
+@media (max-width: 768px) {
+  .prices-item-content {
+    margin-top: 57px;
+  }
 }
 
 .prices-item-content__item {
@@ -282,7 +297,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 40px;
+  padding: 15px 40px;
 }
 .prices-item-content__item:hover {
   cursor: pointer;
@@ -292,6 +307,11 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+@media (max-width: 768px) {
+  .prices__contact {
+    padding-top: 99px;
+  }
 }
 
 .prices-item-content__icon {
@@ -309,6 +329,16 @@ button {
   letter-spacing: 0rem;
   color: #000;
 }
+@media (max-width: 768px) {
+  .prices__title-content {
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.2rem;
+    letter-spacing: 0rem;
+    padding-left: 15px;
+  }
+}
 
 .prices__title-contact {
   font-size: 4rem;
@@ -323,6 +353,15 @@ button {
 .prices__title-contact-colored {
   color: #499A18;
 }
+@media (max-width: 768px) {
+  .prices__title-contact {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.5rem;
+    letter-spacing: 0rem;
+  }
+}
 
 .prices__img {
   width: 152px;
@@ -331,8 +370,16 @@ button {
   background-image: url(../img/prices/leafs.png);
   margin-top: 39px;
 }
+@media (max-width: 768px) {
+  .prices__img {
+    margin-top: 30px;
+  }
+}
 
 .prices__button {
+  width: 162px;
+  height: 50px;
+  text-align: center;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
@@ -342,12 +389,17 @@ button {
   border: 1px solid #E06733;
   color: #E06733;
   border-radius: 5px;
-  padding: 12px 34px 12px 30px;
+  padding: 12px 0px;
   margin-top: 38px;
 }
 .prices__button:hover {
   background: #E06733;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .prices__button {
+    margin-top: 29px;
+  }
 }
 
 #price {
@@ -454,6 +506,7 @@ button {
 @media (max-width: 768px) {
   .service-card__img-garden-care-1 {
     background-image: url("../img/service/garden-care-tablet-1.jpg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -463,6 +516,7 @@ button {
 @media (max-width: 768px) {
   .service-card__img-planting-1 {
     background-image: url("../img/service/planting-tablet-1.jpg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -472,6 +526,7 @@ button {
 @media (max-width: 768px) {
   .service-card__img-lawn-care {
     background-image: url("../img/service/lawn-care-tablet.jpg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -481,6 +536,7 @@ button {
 @media (max-width: 768px) {
   .service-card__img-planting-2 {
     background-image: url("../img/service/planting-tablet-2.jpg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -490,6 +546,7 @@ button {
 @media (max-width: 768px) {
   .service-card__img-garden-care-2 {
     background-image: url("../img/service/garden-care-tablet-2.jpg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -499,6 +556,7 @@ button {
 @media (max-width: 768px) {
   .service-card__img-planting-3 {
     background-image: url("../img/service/planting-tablet-3.jpg");
+    background-repeat: no-repeat;
   }
 }
 

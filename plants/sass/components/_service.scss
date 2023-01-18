@@ -86,6 +86,7 @@
     background-image: url("../img/service/garden-care-1.jpg");
     @include media-tablet {
         background-image: url("../img/service/garden-care-tablet-1.jpg");
+        background-repeat: no-repeat;
     }
 }
 
@@ -93,6 +94,7 @@
     background-image: url("../img/service/planting-1.jpg");
     @include media-tablet {
         background-image: url("../img/service/planting-tablet-1.jpg");
+        background-repeat: no-repeat;
     }
 }
 
@@ -100,6 +102,7 @@
     background-image: url("../img/service/lawn-care.jpg");
     @include media-tablet {
         background-image: url("../img/service/lawn-care-tablet.jpg");
+        background-repeat: no-repeat;
     }
 }
 
@@ -107,6 +110,7 @@
     background-image: url("../img/service/planting-2.jpg");
     @include media-tablet {
         background-image: url("../img/service/planting-tablet-2.jpg");
+        background-repeat: no-repeat;
     }
 }
 
@@ -114,6 +118,7 @@
     background-image: url("../img/service/garden-care-2.jpg");
     @include media-tablet {
         background-image: url("../img/service/garden-care-tablet-2.jpg"); 
+        background-repeat: no-repeat;
     }
 }
 
@@ -121,6 +126,7 @@
     background-image: url("../img/service/planting-3.jpg");
     @include media-tablet {
         background-image: url("../img/service/planting-tablet-3.jpg");
+        background-repeat: no-repeat;
     }
 }
 
