@@ -63,6 +63,11 @@ button {
     padding: 0;
   }
 }
+@media (max-width: 380px) {
+  .navigation__wrapper {
+    display: none;
+  }
+}
 
 .navigation__item {
   font-size: 1.6rem;
@@ -102,6 +107,11 @@ button {
     flex-direction: column;
   }
 }
+@media (max-width: 380px) {
+  .about__wrapper {
+    padding: 31px 25px 32px 25px;
+  }
+}
 
 .about__text {
   width: 605px;
@@ -109,6 +119,12 @@ button {
 @media (max-width: 768px) {
   .about__text {
     width: 668px;
+  }
+}
+@media (max-width: 380px) {
+  .about__text {
+    width: 330px;
+    margin-bottom: 2px;
   }
 }
 
@@ -123,6 +139,13 @@ button {
     background-image: url("../img/about/houseplant-tablet.png");
     width: 250px;
     height: 258px;
+  }
+}
+@media (max-width: 380px) {
+  .about__img {
+    background-image: url("../img/about/houseplant-mobile.png");
+    width: 150px;
+    height: 147px;
   }
 }
 
@@ -150,6 +173,17 @@ button {
     text-align: center;
   }
 }
+@media (max-width: 380px) {
+  .about__title {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.2rem;
+    letter-spacing: 0rem;
+    padding: 0;
+    margin: 0;
+  }
+}
 
 .about__description {
   margin: 0;
@@ -165,6 +199,16 @@ button {
   .about__description {
     width: auto;
     margin-bottom: 70px;
+  }
+}
+@media (max-width: 380px) {
+  .about__description {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: 0rem;
+    margin: 15px 0 0 0;
   }
 }
 
@@ -686,6 +730,13 @@ button {
     flex-direction: row-reverse;
   }
 }
+@media (max-width: 380px) {
+  .welcome__wrapper {
+    padding: 25px 25px 25px 25px;
+    flex-direction: row;
+    background: #EDF2EC;
+  }
+}
 
 .welcome__text {
   width: 549px;
@@ -695,6 +746,11 @@ button {
   .welcome__text {
     width: 346px;
     padding: 0;
+  }
+}
+@media (max-width: 380px) {
+  .welcome__text {
+    width: 330px;
   }
 }
 
@@ -711,6 +767,11 @@ button {
     width: 280px;
     height: 254px;
     display: inline-block;
+  }
+}
+@media (max-width: 380px) {
+  .welcome__img {
+    display: none;
   }
 }
 
@@ -734,6 +795,15 @@ button {
     letter-spacing: 0rem;
   }
 }
+@media (max-width: 380px) {
+  .welcome__title {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.5rem;
+    letter-spacing: 0rem;
+  }
+}
 
 .welcome__description {
   margin: 42px 0 0 0;
@@ -752,6 +822,16 @@ button {
     line-height: 2.5rem;
     letter-spacing: 0rem;
     margin: 30px 0 0 5px;
+  }
+}
+@media (max-width: 380px) {
+  .welcome__description {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: 0rem;
+    margin: 20px 0 0 0;
   }
 }
 
@@ -777,6 +857,22 @@ button {
     margin: 36px 0 0 0;
   }
 }
+@media (max-width: 380px) {
+  .welcome__button {
+    border-radius: 10px;
+    background: #EDF2EC;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0rem;
+    padding: 6px 0;
+    margin: 26px 0 0 0;
+    width: 100px;
+    height: 34px;
+    text-align: center;
+  }
+}
 
 #home {
   scroll-behavior: smooth;
@@ -791,9 +887,19 @@ button {
     max-width: 768px;
   }
 }
+@media (max-width: 380px) {
+  .wrapper {
+    max-width: 380px;
+  }
+}
 
 .header {
   background: #f1f2ec;
+}
+@media (max-width: 380px) {
+  .header {
+    background: #EDF2EC;
+  }
 }
 
 .header__wrapper {
@@ -805,6 +911,11 @@ button {
 @media (max-width: 768px) {
   .header__wrapper {
     padding: 21px 50px 14px 50px;
+  }
+}
+@media (max-width: 380px) {
+  .header__wrapper {
+    padding: 36px 25px 26px 25px;
   }
 }
 
