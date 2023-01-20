@@ -230,6 +230,12 @@ button {
     align-items: center;
   }
 }
+@media (max-width: 380px) {
+  .contacts__wrapper {
+    background: #EDF2EC;
+    padding: 25px 42px 0 42px;
+  }
+}
 
 .contacts__img {
   padding-top: 53px;
@@ -239,6 +245,11 @@ button {
     padding: 0px;
     order: 3;
     margin: 249px 0 0 17px;
+  }
+}
+@media (max-width: 380px) {
+  .contacts__img {
+    margin: 133px 2px 0 0px;
   }
 }
 
@@ -253,6 +264,11 @@ button {
     padding: 0;
   }
 }
+@media (max-width: 380px) {
+  .contacts__title {
+    margin: 0;
+  }
+}
 
 .contacts__title-title {
   text-align: center;
@@ -262,6 +278,15 @@ button {
   line-height: 5.2rem;
   letter-spacing: 0rem;
   color: #499A18;
+}
+@media (max-width: 380px) {
+  .contacts__title-title {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.2rem;
+    letter-spacing: 0rem;
+  }
 }
 
 .contacts__city {
@@ -274,6 +299,12 @@ button {
     margin: 100px 0 0 0;
     padding: 0;
     order: 2;
+  }
+}
+@media (max-width: 380px) {
+  .contacts__city {
+    margin: 0;
+    padding: 88px 0 0 0;
   }
 }
 
@@ -289,6 +320,15 @@ button {
     width: 200px;
     height: 248px;
     background-image: url(../img/contacts/contact_woman-tablet.png);
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+  }
+}
+@media (max-width: 380px) {
+  .contacts__img-img {
+    width: 100px;
+    height: 124px;
+    background-image: url(../img/contacts/contact_woman-mobile.png);
     background-repeat: no-repeat;
     vertical-align: bottom;
   }
@@ -318,6 +358,13 @@ button {
     width: 450px;
     height: 50px;
     padding: 0 35px 0 20px;
+  }
+}
+@media (max-width: 380px) {
+  .contacts-item-content__item {
+    width: 300px;
+    height: 50px;
+    padding: 0 24px 0 19px;
   }
 }
 
@@ -1081,6 +1128,11 @@ button {
     padding-top: 33px;
   }
 }
+@media (max-width: 380px) {
+  .footer__data {
+    padding-top: 20px;
+  }
+}
 
 @media (max-width: 768px) {
   .footer__rss {
@@ -1133,6 +1185,12 @@ button {
   .footer__social-list {
     padding-top: 25px;
     padding-bottom: 24px;
+  }
+}
+@media (max-width: 380px) {
+  .footer__social-list {
+    padding-top: 14px;
+    padding-bottom: 13px;
   }
 }
 

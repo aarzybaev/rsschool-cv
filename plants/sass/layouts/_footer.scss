@@ -4,6 +4,7 @@
     @include media-tablet {
         padding: 0;
     }
+
 }
 .footer__content {
     display: flex;
@@ -19,6 +20,10 @@
 .footer__data {
     @include media-tablet {
         padding-top: 33px;
+    }
+
+    @include media-mobile {
+        padding-top: 20px;
     }
 }
 
@@ -72,6 +77,12 @@
     @include media-tablet {
         padding-top: 25px;
         padding-bottom: 24px;
+    }
+
+    @include media-mobile {
+        padding-top: 14px;
+        padding-bottom: 13px;
+
     }
 }
 

@@ -9,6 +9,11 @@
         flex-direction: column;
         align-items: center;
     }
+
+    @include media-mobile {
+        background: $color-background-mobile;
+        padding: 25px 42px 0 42px;
+    }
     
 }
 
@@ -19,6 +24,10 @@
         padding: 0px;
         order: 3;
         margin: 249px 0 0 17px;
+    }
+
+    @include media-mobile {
+        margin: 133px 2px 0 0px;
     }
 }
 
@@ -32,6 +41,10 @@
         padding: 0;
     }
 
+    @include media-mobile {
+        margin: 0;
+    }
+
 }
 
 .contacts__title-title {
@@ -39,6 +52,11 @@
     @extend %font-secondary;
     @include font($size: 4.0rem, $weight: 700, $height: 5.2rem);
     color: $color-primary;
+
+    @include media-mobile {
+        @include font($size: 2.5rem, $weight: 700, $height: 2.2rem);
+
+    }
 }
 
 .contacts__city {
@@ -50,7 +68,11 @@
         margin: 100px 0 0 0;
         padding: 0;
         order: 2;
-        
+    }
+
+    @include media-mobile {
+        margin: 0;
+        padding:  88px 0 0 0;
     }
 }
 
@@ -68,6 +90,14 @@
         background-repeat: no-repeat;
         vertical-align: bottom;
         
+    }
+
+    @include media-mobile {
+        width: 100px;
+        height: 124px;
+        background-image: url(../img/contacts/contact_woman-mobile.png);
+        background-repeat: no-repeat;
+        vertical-align: bottom;
     }
 }
 
@@ -92,12 +122,20 @@
         height: 50px;
         padding: 0 35px 0 20px;
     }
+
+    @include media-mobile {
+        width: 300px;
+        height: 50px;
+        padding: 0 24px 0 19px;
+
+    }
 }
 
 .contacts-item-content { 
     margin: 0;
     padding: 0;
 }
+
 .contacts-item-content__icon {
     width: 16px;
     height: 16px;
