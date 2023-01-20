@@ -345,6 +345,14 @@ button {
     padding: 40px 50px 92px 50px;
   }
 }
+@media (max-width: 380px) {
+  .prices__wrapper {
+    padding: 19px 79px 45px 76px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
 
 .prices__content {
   padding-right: 279px;
@@ -352,6 +360,11 @@ button {
 @media (max-width: 768px) {
   .prices__content {
     padding: 0;
+  }
+}
+@media (max-width: 380px) {
+  .prices__content {
+    margin-left: 3px;
   }
 }
 
@@ -367,6 +380,14 @@ button {
 @media (max-width: 768px) {
   .prices-item-content {
     margin-top: 57px;
+  }
+}
+@media (max-width: 380px) {
+  .prices-item-content {
+    width: 224px;
+    height: auto;
+    padding: 29px 22px 23px 22px;
+    margin: 37px 0 0 0;
   }
 }
 
@@ -389,6 +410,18 @@ button {
 .prices-item-content__item:hover {
   cursor: pointer;
 }
+@media (max-width: 380px) {
+  .prices-item-content__item {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+    letter-spacing: 0rem;
+    background: #EDF2EC;
+    margin: 16px 0 0 0;
+    padding: 15px 38px 15px 30px;
+  }
+}
 
 .prices__contact {
   display: flex;
@@ -400,6 +433,13 @@ button {
     padding-top: 99px;
   }
 }
+@media (max-width: 380px) {
+  .prices__contact {
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 0 0;
+  }
+}
 
 .prices-item-content__icon {
   width: 16px;
@@ -407,7 +447,6 @@ button {
   background-image: url(../img/prices/accordion_btn.png);
   display: inline-block;
 }
-
 .prices__title-content {
   font-size: 4rem;
   font-style: normal;
@@ -424,6 +463,17 @@ button {
     line-height: 4.2rem;
     letter-spacing: 0rem;
     padding-left: 15px;
+  }
+}
+@media (max-width: 380px) {
+  .prices__title-content {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 0rem;
+    text-align: center;
+    padding: 0;
   }
 }
 
@@ -449,6 +499,17 @@ button {
     letter-spacing: 0rem;
   }
 }
+@media (max-width: 380px) {
+  .prices__title-contact {
+    padding: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.5rem;
+    letter-spacing: 0rem;
+  }
+}
 
 .prices__img {
   width: 152px;
@@ -460,6 +521,11 @@ button {
 @media (max-width: 768px) {
   .prices__img {
     margin-top: 30px;
+  }
+}
+@media (max-width: 380px) {
+  .prices__img {
+    display: none;
   }
 }
 
@@ -488,6 +554,19 @@ button {
     margin-top: 29px;
   }
 }
+@media (max-width: 380px) {
+  .prices__button {
+    width: 121px;
+    height: 35px;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.9rem;
+    letter-spacing: 0rem;
+    padding: 8px 0 8px 0;
+    margin: 20px 0 0 0;
+  }
+}
 
 #price {
   scroll-behavior: smooth;
@@ -495,6 +574,11 @@ button {
 
 .service {
   background: #f1f2ec;
+}
+@media (max-width: 380px) {
+  .service {
+    background: #EDF2EC;
+  }
 }
 
 .service__wrapper {
@@ -505,9 +589,19 @@ button {
     padding: 40px 50px 34px 50px;
   }
 }
+@media (max-width: 380px) {
+  .service__wrapper {
+    padding: 40px 50px 0 50px;
+  }
+}
 
 .service-card {
   margin: 0 0 38px;
+}
+@media (max-width: 380px) {
+  .service-card {
+    margin-bottom: 34px;
+  }
 }
 
 .service-card__wrapper {
@@ -660,6 +754,13 @@ button {
     align-items: flex-start;
   }
 }
+@media (max-width: 380px) {
+  .service-header {
+    padding: 0 0 0 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 .service-header__title {
   width: 306px;
@@ -681,12 +782,33 @@ button {
     margin: 60px 412px 43px 0px;
   }
 }
+@media (max-width: 380px) {
+  .service-header__title {
+    margin: 30px 168px 35px 0;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.2rem;
+    letter-spacing: 0rem;
+    width: auto;
+  }
+}
 
 .service-header__button-wrapper {
   width: 559px;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 380px) {
+  .service-header__button-wrapper {
+    width: 252px;
+    height: 83px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 5px 0 0 0;
+  }
+}
+
 .service-header__button {
   width: 161px;
   height: 50px;
@@ -709,6 +831,20 @@ button {
 .service-header__button:hover {
   background: #E06733;
   color: #fff;
+}
+@media (max-width: 380px) {
+  .service-header__button {
+    width: 121px;
+    height: auto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.9rem;
+    letter-spacing: 0rem;
+    padding: 7px 0 6px 0;
+    text-align: center;
+    background: #EDF2EC;
+  }
 }
 
 #service {

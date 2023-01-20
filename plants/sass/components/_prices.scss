@@ -4,12 +4,23 @@
     @include media-tablet {
         padding: 40px 50px 92px 50px;
     }
+
+    @include media-mobile {
+        padding: 19px 79px 45px 76px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
 }
 .prices__content {
     padding-right: 279px;
     
     @include media-tablet {
         padding: 0;
+    }
+
+    @include media-mobile {
+        margin-left: 3px;
     }
 }
 
@@ -25,6 +36,13 @@
     @include media-tablet {
         margin-top: 57px;
     }
+
+    @include media-mobile {
+        width: 224px;
+        height: auto;
+        padding: 29px 22px 23px 22px;
+        margin: 37px 0 0 0;
+    }
  }
 
 .prices-item-content__item {
@@ -39,8 +57,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
+
     &:hover {
         cursor: pointer;
+    }
+
+    @include media-mobile {
+        @include font($size: 1.5rem, $weight: 700, $height: 2.0rem);
+        background: $color-background-mobile;
+        margin: 16px 0 0 0;
+        padding: 15px 38px 15px 30px;
     }
 }
 
@@ -51,6 +77,12 @@
     @include media-tablet {
         padding-top: 99px;
     }
+
+    @include media-mobile {
+        justify-content: center;
+        align-items: center;
+        padding: 20px  0 0 0;
+    }
 }
 
 .prices-item-content__icon {
@@ -58,6 +90,9 @@
     height: 16px;
     background-image: url(../img/prices/accordion_btn.png);
     display: inline-block;
+    @include media-mobile {
+
+    }
 }
 
 .prices__title-content {
@@ -68,6 +103,12 @@
     @include media-tablet {
         @include font($size: 3.5rem, $weight: 700, $height: 4.2rem);
         padding-left: 15px;
+    }
+
+    @include media-mobile {
+        @include font($size: 2.5rem, $weight: 700, $height: 3.0rem);
+        text-align: center;
+        padding: 0;
     }
 }
 
@@ -84,6 +125,13 @@
     @include media-tablet {
         @include font($size: 2.5rem, $weight: 700, $height: 3.5rem);
     }
+
+    @include media-mobile {
+        padding: 0;
+        text-align: center;
+        @include font($size: 2.0rem, $weight: 700, $height: 3.5rem);
+
+    }
 }
 
 .prices__img {
@@ -95,6 +143,10 @@
 
     @include media-tablet {
         margin-top: 30px;
+    }
+
+    @include media-mobile {
+        display: none;
     }
 }
 
@@ -118,6 +170,15 @@
 
     @include media-tablet {
         margin-top: 29px;
+    }
+
+    @include media-mobile {
+        width: 121px;
+        height: 35px;
+        @include font($size: 1.5rem, $weight: 700, $height: 1.9rem);
+        padding: 8px 0 8px 0;
+        margin: 20px  0 0 0;
+
     }
 }
 

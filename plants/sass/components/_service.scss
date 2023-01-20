@@ -1,5 +1,8 @@
 .service {
     background: $color-background;
+    @include media-mobile {
+        background: $color-background-mobile;
+    }
 }
 .service__wrapper {
     padding: 90px 109px 66px 109px;
@@ -7,10 +10,18 @@
     @include media-tablet {
         padding: 40px 50px 34px 50px;
     }
+
+    @include media-mobile {
+        padding: 40px 50px 0 50px;
+           
+    }
 }
 
 .service-card {
     margin: 0 0 38px;
+    @include media-mobile {
+        margin-bottom: 34px;
+    }
 }
 
 .service-card__wrapper {
@@ -63,7 +74,6 @@
     border-bottom-right-radius: 20px;
 
     @include media-tablet {
-        //padding: 10px 0 0 0;
         padding-bottom: 20px;
         border: none;
         border-top: 1px solid $color-border-gray;
@@ -141,6 +151,13 @@
         flex-direction: column;
         align-items: flex-start;
     }
+
+    @include media-mobile {
+        padding: 0 0 0 25px;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
 }
 
 .service-header__title {
@@ -154,14 +171,27 @@
         width: auto;  
         margin: 60px 412px 43px 0px;
     }
+
+    @include media-mobile {
+        margin: 30px 168px 35px 0;
+        @include font($size: 2.5rem, $height: 3.2rem);
+        width: auto;
+    }
 }
 
 .service-header__button-wrapper {
     width: 559px;
     display: flex;
     justify-content: space-between;
-    @include media-tablet {
 
+    @include media-mobile {
+        
+        width: 252px;
+        height: 83px;
+        //border: 1px dotted red;
+        flex-wrap: wrap;
+        align-content: space-between;
+        padding: 5px 0 0 0;
     }
     
 }
@@ -185,6 +215,17 @@
         background: $color-secondary;
         color: $color-white;
         @extend %transition;
+    }
+
+    @include media-mobile {
+        width: 121px;
+        height: auto;
+        @include font($size: 1.5rem, $height: 1.9rem);
+        padding: 7px 0 6px 0;
+        text-align: center;
+        background: $color-background-mobile;
+
+
     }
 
 }
