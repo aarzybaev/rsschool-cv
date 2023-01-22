@@ -31,9 +31,10 @@ const addHamburgerMenuOpenClickHandler = () => {
         changeClass('navigation__wrapper', 'hamburger__wrapper');
         //animation
         addClass('hamburger__layout', 'show-block')
+        
         //Menu close handler
         addHamburgerMenuCloseClickHandler();
-        //Menu closw handler
+        addHamburgerMenuItemClickHandler();
       
     })
 }
@@ -51,8 +52,26 @@ const addHamburgerMenuCloseClickHandler = () => {
             removeElement('hamburger__layout');
         });
         
-        
     })
+
+}
+
+const addHamburgerMenuItemClickHandler = () => {
+    document.querySelector('.hamburger__wrapper').addEventListener('click', (e) => {
+        if(e.target.className.includes('navigation__link')) {
+
+                hideBlockAnimation('hamburger__layout', 'hide-block', () => {
+
+                    changeClass('hamburger__wrapper', 'navigation__wrapper',);
+                const navigationWrapper = getElementsByClassName('navigation__wrapper')[0];
+                const navigation = getElementsByClassName('navigation')[0]; 
+                    appendChild(navigation, navigationWrapper);
+                    removeElement('hamburger__layout');
+
+            }); 
+        }
+        
+    });
 }
 
 
@@ -78,7 +97,9 @@ const newElement = document.createElement(tagName);
 
 const removeElement = (className) => {
     const element = getElementsByClassName(className)[0];
-    element.remove();
+    if(element) {
+       element.remove();
+    } 
 }
 
 const removeClassName = (className) => {
