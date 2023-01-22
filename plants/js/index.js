@@ -29,7 +29,8 @@ const addHamburgerMenuOpenClickHandler = () => {
         //Insert hamburger layout to end of body
         appendChild(document.getElementsByTagName('body')[0], hamburgerLayout);
         changeClass('navigation__wrapper', 'hamburger__wrapper');
-      
+        //animation
+        addClass('hamburger__layout', 'show-block')
         //Menu close handler
         addHamburgerMenuCloseClickHandler();
         //Menu closw handler
@@ -39,12 +40,17 @@ const addHamburgerMenuOpenClickHandler = () => {
 
 const addHamburgerMenuCloseClickHandler = () => {
     document.querySelector('.hamburger__v-wrapper').addEventListener('click', (e) => {
+                
+        removeClassName('show-block');
+
+        hideBlockAnimation('hamburger__layout', 'hide-block', () => {
+            changeClass('hamburger__wrapper', 'navigation__wrapper',);
+            const navigationWrapper = getElementsByClassName('navigation__wrapper')[0];
+            const navigation = getElementsByClassName('navigation')[0]; 
+            appendChild(navigation, navigationWrapper);
+            removeElement('hamburger__layout');
+        });
         
-        changeClass('hamburger__wrapper', 'navigation__wrapper',);
-        const navigationWrapper = getElementsByClassName('navigation__wrapper')[0];
-        const navigation = getElementsByClassName('navigation')[0];
-        appendChild(navigation, navigationWrapper);
-        removeElement('hamburger__layout');
         
     })
 }
@@ -85,5 +91,9 @@ const appendChild = (parentTag, childTag) => parentTag.appendChild(childTag);
 
 const getElementsByClassName = (className) => [...document.getElementsByClassName(className)];
 
-
+const hideBlockAnimation = (className, addedClassName, callback) => {
+    addClass(className, addedClassName);
+    setTimeout(callback, 1000);
+    
+}
 

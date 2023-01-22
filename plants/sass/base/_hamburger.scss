@@ -46,9 +46,10 @@
     }
 
     @include media-mobile {
+        width: 280px;
         display: flex;
         flex-direction: column;
-        height: auto;
+        height: 318px;
 
     }
 
@@ -65,16 +66,11 @@
     background: $color-background;
     margin: 0;
     padding: 0 0 0 40px;
-    //box-shadow: 0 -40px 20px rgb(0 0 0 / 40%);
     width: 280px;
     height: 100%;
-   
+
 }
 
-
-.hamburger-h-hide {
-    display: none;
-}
 
 .hamburger__v-wrapper {
     display: flex;
@@ -95,3 +91,25 @@
     width: 2px;
     background: $color-hamburger;
 }
+
+.show-block {
+    animation: showBlock 1s linear forwards;
+}
+
+.hide-block {
+    animation: hideBlock 1s linear forwards;
+}
+
+@keyframes showBlock {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes hideBlock {
+    from {left: 102px;}
+    to {left: 380px;}
+  }

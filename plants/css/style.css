@@ -169,9 +169,10 @@ button {
 }
 @media (max-width: 380px) {
   .hamburger__layout {
+    width: 280px;
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 318px;
   }
 }
 
@@ -187,10 +188,6 @@ button {
   padding: 0 0 0 40px;
   width: 280px;
   height: 100%;
-}
-
-.hamburger-h-hide {
-  display: none;
 }
 
 .hamburger__v-wrapper {
@@ -213,6 +210,30 @@ button {
   background: #717171;
 }
 
+.show-block {
+  animation: showBlock 1s linear forwards;
+}
+
+.hide-block {
+  animation: hideBlock 1s linear forwards;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hideBlock {
+  from {
+    left: 102px;
+  }
+  to {
+    left: 380px;
+  }
+}
 .about {
   background: #fff;
 }
