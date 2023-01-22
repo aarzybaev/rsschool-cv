@@ -5,11 +5,25 @@
     justify-content: space-between;
     width: 452px;
     height: 50px;
+
+    @include media-tablet {
+        padding: 0;
+    }
+
+    @include media-mobile {
+        display: none;
+    }
 }
 
 .navigation__item {
     @extend %font-secondary;
     @include font($height: 5.0rem);
+
+    @include media-mobile {
+        height: auto;
+        padding: 5px;
+    }
+
 }
 
 .navigation__link {
@@ -19,5 +33,19 @@
         @include font($height: 5.0rem, $weight: 700);
         font-family: Inika;
         color: $color-secondary;
+    }
+
+    
+
+    
+
+    &:hover {
+        color: $color-secondary;
+        @extend %transition;
+    }
+
+    @include media-mobile {
+        @include font($size: 4.0rem);
+        color: $color-nav-link;
     }
 }

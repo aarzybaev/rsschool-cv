@@ -5,15 +5,48 @@
     padding: 0 109px;
     display: flex;
     
+    @include media-tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include media-mobile {
+        background: $color-background-mobile;
+        padding: 25px 42px 0 42px;
+    }
+    
+    @include media-mobilesmall {
+        padding: 25px 25px 0 25px;
+    }
 }
 
 .contacts__img {
     padding-top: 53px;
+
+    @include media-tablet {
+        padding: 0px;
+        order: 3;
+        margin: 249px 0 0 17px;
+    }
+
+    @include media-mobile {
+        margin: 133px 2px 0 0px;
+    }
 }
 
 .contacts__title {
     margin-left: 113px;
     padding-top: 60px;
+    
+    @include media-tablet {
+        order: 1;
+        margin: 40px 0 0 0;
+        padding: 0;
+    }
+
+    @include media-mobile {
+        margin: 0;
+    }
 
 }
 
@@ -22,12 +55,28 @@
     @extend %font-secondary;
     @include font($size: 4.0rem, $weight: 700, $height: 5.2rem);
     color: $color-primary;
+
+    @include media-mobile {
+        @include font($size: 2.5rem, $weight: 700, $height: 2.2rem);
+
+    }
 }
 
 .contacts__city {
     padding-top: 148px;
     margin-left: 69px;
     flex-grow: 1;
+
+    @include media-tablet {
+        margin: 100px 0 0 0;
+        padding: 0;
+        order: 2;
+    }
+
+    @include media-mobile {
+        margin: 0;
+        padding:  88px 0 0 0;
+    }
 }
 
 .contacts__img-img {
@@ -36,6 +85,23 @@
     background-image: url(../img/contacts/contact_woman.png);
     display: inline-block;
     vertical-align: bottom;
+
+    @include media-tablet {
+        width: 200px;
+        height: 248px;
+        background-image: url(../img/contacts/contact_woman-tablet.png);
+        background-repeat: no-repeat;
+        vertical-align: bottom;
+        
+    }
+
+    @include media-mobile {
+        width: 100px;
+        height: 124px;
+        background-image: url(../img/contacts/contact_woman-mobile.png);
+        background-repeat: no-repeat;
+        vertical-align: bottom;
+    }
 }
 
 .contacts-item-content__item {
@@ -53,12 +119,30 @@
     &:hover {
         cursor: pointer;
     }
+
+    @include media-tablet {
+        width: 450px;
+        height: 50px;
+        padding: 0 35px 0 20px;
+    }
+
+    @include media-mobile {
+        width: 300px;
+        height: 50px;
+        padding: 0 24px 0 19px;
+    }
+
+    @include media-mobilesmall {
+        width: 250px;
+        height: 50px;
+    }
 }
 
 .contacts-item-content { 
     margin: 0;
     padding: 0;
 }
+
 .contacts-item-content__icon {
     width: 16px;
     height: 16px;
