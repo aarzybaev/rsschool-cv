@@ -1,6 +1,6 @@
 window.onload = function() {
-    console.log('Ready to use!');
-
+    
+    console.log('Scores: 70');
     addHamburgerMenuOpenClickHandler();
     
 }
@@ -73,6 +73,7 @@ const addHamburgerMenuItemClickHandler = () => {
         
     });
 }
+
 
 
 const addClass = (className, addedClassName) => {
