@@ -15,6 +15,12 @@
         padding: 40px 50px 0 50px;
            
     }
+
+    @include media-mobilesmall {
+        padding: 40px 10px 0 20px;
+
+    }
+
 }
 
 .service-card {
@@ -155,8 +161,11 @@
     @include media-mobile {
         padding: 0 0 0 25px;
         flex-direction: column;
-        align-items: flex-start;
-        
+        align-items: flex-start;        
+    }
+
+    @include media-mobilesmall {
+        padding: 0 0 0 20px;
     }
 }
 
@@ -176,6 +185,11 @@
         margin: 30px 168px 35px 0;
         @include font($size: 2.5rem, $height: 3.2rem);
         width: auto;
+    }
+
+    @include media-mobilesmall {
+        margin: 30px 150px 35px 0;
+
     }
 }
 

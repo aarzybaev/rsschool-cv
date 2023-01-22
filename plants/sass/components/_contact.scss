@@ -15,6 +15,9 @@
         padding: 25px 42px 0 42px;
     }
     
+    @include media-mobilesmall {
+        padding: 25px 25px 0 25px;
+    }
 }
 
 .contacts__img {
@@ -127,7 +130,11 @@
         width: 300px;
         height: 50px;
         padding: 0 24px 0 19px;
+    }
 
+    @include media-mobilesmall {
+        width: 250px;
+        height: 50px;
     }
 }
 

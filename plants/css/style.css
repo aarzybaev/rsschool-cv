@@ -18,6 +18,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -255,6 +256,11 @@ button {
     padding: 31px 25px 32px 25px;
   }
 }
+@media (max-width: 320px) {
+  .about__wrapper {
+    padding: 32px 25px;
+  }
+}
 
 .about__text {
   width: 605px;
@@ -266,8 +272,13 @@ button {
 }
 @media (max-width: 380px) {
   .about__text {
-    width: 330px;
+    width: auto;
     margin-bottom: 2px;
+  }
+}
+@media (max-width: 320px) {
+  .about__text {
+    width: auto;
   }
 }
 
@@ -377,6 +388,11 @@ button {
   .contacts__wrapper {
     background: #EDF2EC;
     padding: 25px 42px 0 42px;
+  }
+}
+@media (max-width: 320px) {
+  .contacts__wrapper {
+    padding: 25px 25px 0 25px;
   }
 }
 
@@ -510,6 +526,12 @@ button {
     padding: 0 24px 0 19px;
   }
 }
+@media (max-width: 320px) {
+  .contacts-item-content__item {
+    width: 250px;
+    height: 50px;
+  }
+}
 
 .contacts-item-content {
   margin: 0;
@@ -539,7 +561,13 @@ button {
   .prices__wrapper {
     padding: 19px 79px 45px 76px;
     flex-direction: column;
-    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 320px) {
+  .prices__wrapper {
+    padding: 19px 0 0 0;
+    align-items: center;
     justify-content: center;
   }
 }
@@ -580,7 +608,6 @@ button {
     margin: 37px 0 0 0;
   }
 }
-
 .prices-item-content__item {
   list-style: none;
   border-radius: 20px;
@@ -628,6 +655,11 @@ button {
     justify-content: center;
     align-items: center;
     padding: 20px 0 0 0;
+  }
+}
+@media (max-width: 320px) {
+  .prices__contact {
+    padding: 20px;
   }
 }
 
@@ -782,6 +814,11 @@ button {
 @media (max-width: 380px) {
   .service__wrapper {
     padding: 40px 50px 0 50px;
+  }
+}
+@media (max-width: 320px) {
+  .service__wrapper {
+    padding: 40px 10px 0 20px;
   }
 }
 
@@ -951,6 +988,11 @@ button {
     align-items: flex-start;
   }
 }
+@media (max-width: 320px) {
+  .service-header {
+    padding: 0 0 0 20px;
+  }
+}
 
 .service-header__title {
   width: 306px;
@@ -981,6 +1023,11 @@ button {
     line-height: 3.2rem;
     letter-spacing: 0rem;
     width: auto;
+  }
+}
+@media (max-width: 320px) {
+  .service-header__title {
+    margin: 30px 150px 35px 0;
   }
 }
 
