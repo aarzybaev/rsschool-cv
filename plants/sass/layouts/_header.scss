@@ -1,5 +1,8 @@
 .header {
     background: $color-background;
+    @include media-mobile {
+        background: $color-background-mobile;
+    }
 }
 
 .header__wrapper {
@@ -7,4 +10,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include media-tablet {
+        padding: 21px 50px 14px 50px;
+    }
+    @include media-mobile {
+        padding: 30px 25px 30px 25px;
+    }
 }

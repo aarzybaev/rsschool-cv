@@ -1,7 +1,19 @@
+.logo {
+    display: flex;    
+    align-items: center;
+    padding-bottom: 5px;
+
+    @include media-mobile {
+        align-items: flex-end;
+        padding-top: 2px;
+    }
+}
+
 .logo__img {
     background-image: url("../img/logo/logo.png");
+    background-repeat: no-repeat;
     width: 22px;
-    height: 22px;
+    height: 29px;
     display: inline-block;
 }
 
