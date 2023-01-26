@@ -33,7 +33,13 @@ const addHamburgerMenuOpenClickHandler = () => {
         changeClass('navigation__wrapper', 'hamburger__wrapper');
         
         //animation
-        addClass('hamburger__layout', 'show-block')
+        addClass('hamburger__layout', 'show-block');
+
+        document.querySelector('.hamburger__layout').focus();
+        document.querySelector('.hamburger__layout').addEventListener('blur', () => {
+            hideBlockAnimation('hamburger__layout', 'hide-block');
+
+        });
         
         //Menu close handler
         addHamburgerMenuCloseClickHandler();
