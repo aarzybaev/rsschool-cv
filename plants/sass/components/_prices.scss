@@ -1,5 +1,5 @@
 .prices__wrapper {
-    padding: 40px 109px 122px 109px;
+    padding: 40px 109px 115px 109px;
     
     @include media-tablet {
         padding: 40px 50px 92px 50px;
@@ -173,8 +173,8 @@
     border: 1px solid $color-secondary;
     color: $color-secondary;
     border-radius: 5px;
-    padding: 12px 0px;
-    margin-top: 38px;
+    //padding: 14px 0px;
+    margin-top: 45px;
     
     &:hover {
         background: $color-secondary;

@@ -551,7 +551,7 @@ button {
 }
 
 .prices__wrapper {
-  padding: 40px 109px 122px 109px;
+  padding: 40px 109px 115px 109px;
 }
 @media (max-width: 768px) {
   .prices__wrapper {
@@ -765,8 +765,7 @@ button {
   border: 1px solid #E06733;
   color: #E06733;
   border-radius: 5px;
-  padding: 12px 0px;
-  margin-top: 38px;
+  margin-top: 45px;
 }
 .prices__button:hover {
   background: #E06733;
