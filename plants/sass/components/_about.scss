@@ -23,6 +23,7 @@
 
 .about__text {
    width: 605px;
+   padding-top: 42px;
    @include media-tablet {
     width: 668px;
    }

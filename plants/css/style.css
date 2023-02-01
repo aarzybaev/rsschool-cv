@@ -264,6 +264,7 @@ button {
 
 .about__text {
   width: 605px;
+  padding-top: 42px;
 }
 @media (max-width: 768px) {
   .about__text {
@@ -550,7 +551,7 @@ button {
 }
 
 .prices__wrapper {
-  padding: 40px 109px 120px 109px;
+  padding: 40px 109px 122px 109px;
 }
 @media (max-width: 768px) {
   .prices__wrapper {
@@ -804,7 +805,7 @@ button {
 }
 
 .service__wrapper {
-  padding: 90px 109px 66px 109px;
+  padding: 90px 109px 90px 109px;
 }
 @media (max-width: 768px) {
   .service__wrapper {
