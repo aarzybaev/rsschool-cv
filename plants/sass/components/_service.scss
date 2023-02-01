@@ -221,6 +221,7 @@
     background: $color-background;
     border: 1px solid $color-secondary;
     border-radius: 5px;
+
     &-active {
         background: $color-secondary;
         color: $color-white;
@@ -246,4 +247,9 @@
 
 #service {
 	scroll-behavior: smooth;
+}
+
+.blur {
+    filter: blur(3px);
+    @extend %transition;
 }

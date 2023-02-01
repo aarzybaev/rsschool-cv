@@ -1,6 +1,7 @@
 .hamburger {
  display: none;
- flex-direction: column; 
+ flex-direction: column;
+
 >* {
     margin: 6px 0 0 0;
     &:first-child {
@@ -35,7 +36,7 @@
     z-index: 300;
     border: 1px solid $color-border-gray;
     background: $color-background;
-    //@extend %transition-menu;
+    border: 1px solid $color-secondary;
 
     @include media-desktop {
         display: none;
@@ -46,29 +47,25 @@
     }
 
     @include media-mobile {
-        width: 280px;
         display: flex;
         flex-direction: column;
-        height: 318px;
-
+        
     }
-    
+
 }
 
 
 .hamburger__wrapper {
+    width: 280px;
     display: flex;
     list-style: none;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
     background: $color-background;
     margin: 0;
-    padding: 0 0 0 40px;
-    width: 280px;
-    height: 100%;
-
+    padding: 0;
+    
 }
 
 
@@ -83,6 +80,7 @@
             margin-right: 0;
         }
     }
+    
 }
 
 .hamburger__v-line {
@@ -90,6 +88,7 @@
     height: 32px;
     width: 2px;
     background: $color-hamburger;
+    
 }
 
 .show-block {
@@ -108,8 +107,15 @@
       opacity: 1;
     }
   }
+  
 
   @keyframes hideBlock {
-    from {left: 102px;}
-    to {left: 380px;}
+    from { 
+        left: 102px; 
+    }
+    to { 
+        left: 380px; 
+    }
   }
+
+  

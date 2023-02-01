@@ -1,5 +1,5 @@
 @import "../node_modules/normalize.css/normalize.css";
-.welcome__button:hover, .service-header__button:hover, .navigation__link:hover {
+.welcome__button:hover, .blur, .service-header__button:hover, .navigation__link:hover {
   transition: all 0.3s ease-out;
 }
 
@@ -157,6 +157,7 @@ button {
   z-index: 300;
   border: 1px solid #E3E1D5;
   background: #f1f2ec;
+  border: 1px solid #E06733;
 }
 @media (max-width: 1440px) {
   .hamburger__layout {
@@ -170,25 +171,21 @@ button {
 }
 @media (max-width: 380px) {
   .hamburger__layout {
-    width: 280px;
     display: flex;
     flex-direction: column;
-    height: 318px;
   }
 }
 
 .hamburger__wrapper {
+  width: 280px;
   display: flex;
   list-style: none;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
   background: #f1f2ec;
   margin: 0;
-  padding: 0 0 0 40px;
-  width: 280px;
-  height: 100%;
+  padding: 0;
 }
 
 .hamburger__v-wrapper {
@@ -1086,6 +1083,10 @@ button {
 
 #service {
   scroll-behavior: smooth;
+}
+
+.blur {
+  filter: blur(3px);
 }
 
 .welcome {

@@ -1,11 +1,12 @@
 window.onload = function() {
    
-    addHamburgerMenuOpenClickHandler();
+    init();
     
 }
 
 
-const addHamburgerMenuOpenClickHandler = () => {
+const init = () => {
+    // burger menu
     document.querySelector('.hamburger').addEventListener('click', (e) => {
         
         //create burger-v
@@ -36,7 +37,9 @@ const addHamburgerMenuOpenClickHandler = () => {
         addClass('hamburger__layout', 'show-block');
 
         document.querySelector('.hamburger__layout').focus();
+
         document.querySelector('.hamburger__layout').addEventListener('blur', () => {
+            
             hideBlockAnimation('hamburger__layout', 'hide-block');
 
         });
@@ -46,8 +49,61 @@ const addHamburgerMenuOpenClickHandler = () => {
         addHamburgerMenuItemClickHandler();
     });
 
+
+
+
+// Service card select
+
+let buttons = document.querySelector('.service-header__button-wrapper');
+let clickedButtonsCount = 0;
+
+buttons.addEventListener('click', (e) => {
+
+if(!e.target.attributes['data-button']) return;
+
+if (e.target.classList.contains('service-header__button-active')) {
     
+    if (clickedButtonsCount == 1) {
+            addRemoveClass('blur', 'remove', `[data-service-card]`);
+    } else {
+        addRemoveClass('blur', 'add', `[data-service-card="${e.target.dataset.button}"]`);
+    }
+
+    e.target.classList.remove('service-header__button-active');
+    clickedButtonsCount--;
+
+} else {
+
+    if (clickedButtonsCount < 2) {
+        e.target.classList.add('service-header__button-active');
+
+        if (clickedButtonsCount == 0) {
+            addRemoveClass('blur', 'add', `[data-service-card]:not([data-service-card="${e.target.dataset.button}"])`); 
+        } else {
+            addRemoveClass('blur', 'remove', `[data-service-card="${e.target.dataset.button}"]`); 
+        }
+
+    clickedButtonsCount++;
+
+    }
+}
+
+
+});
+
 };
+
+function addRemoveClass(className, classOperation, filter) {
+
+    let items = document.querySelectorAll(filter);
+
+    for(let element of items) {
+        element.classList[classOperation](className);
+    }   
+}
+
+
+// Service card selecter
 
 
 
@@ -111,12 +167,18 @@ const appendChild = (parentTag, childTag) => parentTag.appendChild(childTag);
 const getElementsByClassName = (className) => [...document.getElementsByClassName(className)];
 
 const hideBlockAnimation = (className, addedClassName, callback) => {
+    
+    //removeElement('hamburger__v-wrapper');
     addClass(className, addedClassName);
+
     let cb = () => {
+        
         removeClassName('show-block');
         changeClass('hamburger__wrapper', 'navigation__wrapper',);
+
         const navigationWrapper = getElementsByClassName('navigation__wrapper')[0];
         const navigation = getElementsByClassName('navigation')[0]; 
+
         appendChild(navigation, navigationWrapper);
         removeElement('hamburger__layout');
 
