@@ -1,5 +1,5 @@
 @import "../node_modules/normalize.css/normalize.css";
-.welcome__button:hover, .blur, .service-header__button:hover, .navigation__link:hover {
+.welcome__button:hover, .blur, .navigation__link:hover {
   transition: all 0.3s ease-out;
 }
 
@@ -1060,14 +1060,26 @@ button {
   background: #f1f2ec;
   border: 1px solid #E06733;
   border-radius: 5px;
+  /* &:hover {
+      background: $color-secondary;
+      color: $color-white;
+      @extend %transition;
+  }  */
+  /* 
+   * https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer 
+   * coarse: The primary input mechanism includes a pointing device of limited accuracy.
+   */
 }
 .service-header__button-active {
   background: #E06733;
   color: #fff;
 }
-.service-header__button:hover {
-  background: #E06733;
-  color: #fff;
+@media not all and (pointer: coarse) {
+  .service-header__button:hover {
+    background: #E06733;
+    color: #fff;
+    transition: all 0.5s ease-out;
+  }
 }
 @media (max-width: 380px) {
   .service-header__button {
@@ -1082,6 +1094,10 @@ button {
     text-align: center;
     background: #EDF2EC;
   }
+  .service-header__button-active {
+    background: #E06733;
+    color: #fff;
+  }
 }
 
 #service {
@@ -1089,7 +1105,7 @@ button {
 }
 
 .blur {
-  filter: blur(3px);
+  filter: blur(2px);
 }
 
 .welcome {
