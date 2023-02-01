@@ -1,5 +1,5 @@
 @import "../node_modules/normalize.css/normalize.css";
-.welcome__button:hover, .service-header__button:hover, .navigation__link:hover {
+.welcome__button:hover, .blur, .service-header__button:hover, .navigation__link:hover {
   transition: all 0.3s ease-out;
 }
 
@@ -1086,6 +1086,10 @@ button {
 
 #service {
   scroll-behavior: smooth;
+}
+
+.blur {
+  filter: blur(3px);
 }
 
 .welcome {

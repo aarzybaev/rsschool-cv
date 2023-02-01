@@ -247,3 +247,8 @@
 #service {
 	scroll-behavior: smooth;
 }
+
+.blur {
+    filter: blur(3px);
+    @extend %transition;
+}
