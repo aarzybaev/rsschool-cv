@@ -74,6 +74,7 @@
     } */
 
     @include media-mobile {
+        width: 180px;
         @include font($size: 1.5rem, $weight: 700, $height: 2.0rem);
         background: $color-background-mobile;
         margin: 16px 0 0 0;

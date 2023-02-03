@@ -8,16 +8,16 @@
     padding: 93px 109px 94px 109px;
 
     @include media-tablet {
-        padding: 40px 50px 94px 50px;
+        padding: 0px 50px 94px 50px;
         flex-direction: column;
     }
 
     @include media-mobile {
-        padding: 31px 25px 32px 25px;
+        padding: 0px 25px 32px 25px;
     }
 
     @include media-mobilesmall {
-        padding: 32px 25px;
+        padding: 0px 25px 32px 25px;
     }
 }
 
@@ -30,10 +30,12 @@
    @include media-mobile {
     width: auto;
     margin-bottom: 2px;
+    padding: 31px 0 0 0;
    }
    @include media-mobilesmall {
     width: auto;
-   }
+    margin-bottom: 2px;
+    padding: 31px 0 0 0;   }
 }
 
 .about__img {

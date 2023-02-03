@@ -247,18 +247,18 @@ button {
 }
 @media (max-width: 768px) {
   .about__wrapper {
-    padding: 40px 50px 94px 50px;
+    padding: 0px 50px 94px 50px;
     flex-direction: column;
   }
 }
 @media (max-width: 380px) {
   .about__wrapper {
-    padding: 31px 25px 32px 25px;
+    padding: 0px 25px 32px 25px;
   }
 }
 @media (max-width: 320px) {
   .about__wrapper {
-    padding: 32px 25px;
+    padding: 0px 25px 32px 25px;
   }
 }
 
@@ -275,11 +275,14 @@ button {
   .about__text {
     width: auto;
     margin-bottom: 2px;
+    padding: 31px 0 0 0;
   }
 }
 @media (max-width: 320px) {
   .about__text {
     width: auto;
+    margin-bottom: 2px;
+    padding: 31px 0 0 0;
   }
 }
 
@@ -632,6 +635,7 @@ button {
 }
 @media (max-width: 380px) {
   .prices-item-content__item {
+    width: 180px;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
