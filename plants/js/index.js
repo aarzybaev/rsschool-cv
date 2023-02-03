@@ -112,7 +112,9 @@ accordion.addEventListener('click', (e) => {
         if(!e.target.parentElement.children[1].hidden) {
             for (let item of dataPrices) {
                 if(item.dataset.price != dataPriceCurr) {
-                   item.hidden = true;
+                    item.hidden = true;
+                    item.parentElement.classList.remove('prices-item-content-background-color');
+                    item.previousElementSibling.classList.remove('drop-up-arrow');
                 }
             }
         }
