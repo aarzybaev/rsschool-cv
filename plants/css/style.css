@@ -554,11 +554,11 @@ button {
 }
 
 .prices__wrapper {
-  padding: 40px 109px 115px 109px;
+  padding: 40px 109px 0px 109px;
 }
 @media (max-width: 768px) {
   .prices__wrapper {
-    padding: 40px 50px 92px 50px;
+    padding: 40px 50px 0px 50px;
   }
 }
 @media (max-width: 380px) {
@@ -750,10 +750,12 @@ button {
   display: inline-block;
   background-image: url(../img/prices/leafs.png);
   margin-top: 39px;
+  margin-bottom: 115px;
 }
 @media (max-width: 768px) {
   .prices__img {
     margin-top: 30px;
+    margin-bottom: 92px;
   }
 }
 @media (max-width: 380px) {
