@@ -91,7 +91,48 @@ if (e.target.classList.contains('service-header__button-active')) {
 
 });
 
+// Service card select end
+
+// Prices action
+
+let accordion = document.querySelector('.prices-item-content');
+let dataPrices = document.querySelectorAll('[data-price]');
+
+accordion.addEventListener('click', (e) => {
+    if(e.target.tagName == 'SPAN' && e.target.classList.contains('prices-item-content__icon')) {
+        //console.log(e);
+        
+        let dataPriceCurr = e.target.parentElement.children[1].dataset.price;
+
+        e.target.parentElement.children[1].hidden = !e.target.parentElement.children[1].hidden;
+        e.target.parentElement.classList.toggle('prices-item-content-background-color');
+        e.target.classList.toggle('drop-up-arrow');
+
+        //console.log(e.target);
+        if(!e.target.parentElement.children[1].hidden) {
+            for (let item of dataPrices) {
+                if(item.dataset.price != dataPriceCurr) {
+                   item.hidden = true;
+                }
+            }
+        }
+        
+    }
+});
+
+// Prices action end
+
+
 };
+
+// Init end
+
+
+
+
+
+
+// Functions
 
 function addRemoveClass(className, classOperation, filter) {
 
@@ -101,10 +142,6 @@ function addRemoveClass(className, classOperation, filter) {
         element.classList[classOperation](className);
     }   
 }
-
-
-// Service card select
-
 
 const addHamburgerMenuCloseClickHandler = () => {
     document.querySelector('.hamburger__v-wrapper').addEventListener('click', (e) => {
