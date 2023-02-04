@@ -100,7 +100,6 @@ let dataPrices = document.querySelectorAll('[data-price]');
 
 accordion.addEventListener('click', (e) => {
     if(e.target.tagName == 'SPAN' && e.target.classList.contains('prices-item-content__icon')) {
-        //console.log(e);
         
         let dataPriceCurr = e.target.parentElement.children[1].dataset.price;
 
@@ -108,7 +107,6 @@ accordion.addEventListener('click', (e) => {
         e.target.parentElement.classList.toggle('prices-item-content-background-color');
         e.target.classList.toggle('drop-up-arrow');
 
-        //console.log(e.target);
         if(!e.target.parentElement.children[1].hidden) {
             for (let item of dataPrices) {
                 if(item.dataset.price != dataPriceCurr) {
@@ -123,6 +121,79 @@ accordion.addEventListener('click', (e) => {
 });
 
 // Prices action end
+
+// Contacts action start
+const city = {
+    yonkers: {
+        city: "Yonkers, NY",
+        phone: "+1	914	678 0003",
+        address: "511 Warburton Ave" 
+    },
+    canandaigua: {
+        city: "Canandaigua, NY",
+        phone: "+1	585	393 0001",
+        address: "151 Charlotte Street" 
+    },
+    sherrill: {
+        city: "Sherrill, NY",
+        phone: "+1	914	678 0003",
+        address: "14 WEST Noyes BLVD" 
+    },
+    newyork: {
+        city: "New York City",
+        phone: "+1	212	456 0002",
+        address: "9 East 91st Street" 
+    }
+};
+
+let contactItem = document.querySelector('.contacts-item-content');
+let contactListWrapper = document.querySelector('.contacts-item-content__data');
+let contactCityCard = document.querySelector('.contact-city-card');
+
+contactItem.addEventListener('click', (e) => {
+    if(e.target.tagName == 'SPAN') {
+        if(contactCityCard.childElementCount) {
+            contactCityCard.hidden = true;
+        } 
+        e.target.parentElement.nextElementSibling.hidden = !e.target.parentElement.nextElementSibling.hidden;
+        e.target.parentElement.classList.toggle('contacts-item-content__item-background');
+        e.target.classList.toggle('contacts-item-content__item-drop-up-arrow');
+    }
+});
+
+contactListWrapper.addEventListener('click', (e) => {
+
+    if(e.target.tagName == 'LI') {
+        let cardTemplate = `<div class="contact-city-card__wrapper">
+        <div class="contact-city-card__key-value">
+            <div class="contact-city-card__key">
+                <span class="contact-city-card__city-key">City:</span>
+                <span class="contact-city-card__phone-key">Phone:</span>
+                <span class="contact-city-card__address-key">Office address:</span>
+            </div>
+            <div class="contact-city-card__value">
+                <span class="contact-city-card__city-value">${city[e.target.dataset.city]['city']}</span>
+                <span class="contact-city-card__phone-value">${city[e.target.dataset.city]['phone']}</span>
+                <span class="contact-city-card__address-value">${city[e.target.dataset.city]['address']}</span>
+            </div>
+        </div>
+        <a href="tel:${city[e.target.dataset.city]['phone']}" class="contact-city-card__button">Call us</a>
+    </div>
+</div>`;
+
+e.target.parentElement.previousElementSibling.firstChild.data = city[e.target.dataset.city]['city'];
+e.target.parentElement.previousElementSibling.classList.add('contacts-item-content__item-background');
+contactListWrapper.hidden = true;
+contactCityCard.innerHTML = cardTemplate;
+contactCityCard.hidden = false;
+
+    }
+
+    
+    
+});
+
+// Contacts action end
 
 
 };

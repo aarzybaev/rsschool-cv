@@ -3,7 +3,7 @@
   transition: all 0.3s ease-out;
 }
 
-.footer__data-data, .footer__rss-rss, .welcome__button, .welcome__description, .welcome__title, .service-card__description, .service-card__title, .prices__title-contact, .prices__title-content, .prices-item-content__item, .contacts-item-content__item, .about__description {
+.footer__data-data, .footer__rss-rss, .welcome__button, .welcome__description, .welcome__title, .service-card__description, .service-card__title, .prices__title-contact, .prices__title-content, .prices-item-content__item, .contact-city-card__button, .contact-city-card__value > *, .contact-city-card__key > *, .contacts-item-content__item, .about__description {
   font-family: "Inter", Verdana, sans-serif;
 }
 
@@ -508,6 +508,7 @@ button {
   letter-spacing: 0rem;
   color: #717171;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 5px 17px 5px 20px;
@@ -551,6 +552,110 @@ button {
 
 #contacts {
   scroll-behavior: smooth;
+}
+
+.contacts-item-content__data {
+  background: antiquewhite;
+  list-style: none;
+  background: #DCE9D9;
+  padding: 27px 35px 31px 35px;
+}
+.contacts-item-content__data :first-child {
+  margin-top: 0;
+}
+.contacts-item-content__data > * {
+  height: 35px;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0rem;
+  color: #499A18;
+  border-bottom: 1px solid #D9D9D9;
+  margin-top: 12px;
+}
+.contacts-item-content__data > *:hover {
+  /* 
+   * https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer 
+   * coarse: The primary input mechanism includes a pointing device of limited accuracy.
+   */
+}
+@media not all and (pointer: coarse) {
+  .contacts-item-content__data > *:hover:hover {
+    cursor: pointer;
+    color: #717171;
+    border-bottom: 1px solid #717171;
+    transition: all 0.5s ease-out;
+  }
+}
+
+.contacts-item-content__item-background {
+  background: #C1E698;
+}
+
+.contacts-item-content__item-drop-up-arrow {
+  background-image: url(../img/contacts/accordion_btn_.png);
+}
+
+.contact-city-card__wrapper {
+  border-radius: 20px;
+  border: 1px solid #000;
+  background: #EDF2EC;
+  padding: 17px 76px 29px 35px;
+}
+
+.contact-city-card__key-value {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.contact-city-card__key {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact-city-card__key > * {
+  color: #000;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0rem;
+}
+
+.contact-city-card__value {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: flex-start;
+}
+.contact-city-card__value > * {
+  color: #717171;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0rem;
+  padding-left: 14px;
+}
+
+.contact-city-card__button {
+  background: #EDF2EC;
+  padding: 7px 0;
+  border: 1px solid #E06733;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3rem;
+  letter-spacing: 0rem;
+  color: #717171;
+  text-decoration: none;
+  border-radius: 5px;
+  display: block;
+  width: 122px;
+  height: 26px;
+  text-align: center;
+  margin-left: 127px;
 }
 
 .prices__wrapper {
@@ -868,6 +973,10 @@ button {
   background-image: url(../img/prices/accordion_btn_.png);
 }
 
+.contact-city-card {
+  margin-top: 47px;
+}
+
 .service {
   background: #f1f2ec;
 }
@@ -1134,11 +1243,6 @@ button {
   background: #f1f2ec;
   border: 1px solid #E06733;
   border-radius: 5px;
-  /* &:hover {
-      background: $color-secondary;
-      color: $color-white;
-      @extend %transition;
-  }  */
   /* 
    * https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer 
    * coarse: The primary input mechanism includes a pointing device of limited accuracy.

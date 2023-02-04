@@ -112,6 +112,7 @@
     @include font($size: 2.0rem, $height: 4.0rem);
     color: $color-title;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 5px 17px 5px 20px;
@@ -152,4 +153,100 @@
 
 #contacts {
 	scroll-behavior: smooth;
+}
+
+.contacts-item-content__data {
+    //display: block;
+    background: antiquewhite;
+    list-style: none;
+    background: $color-background-item2;
+    padding: 27px 35px 31px 35px;
+    :first-child {
+        margin-top: 0;
+    }
+
+    >* {
+        height: 35px;
+        @include font($height: 4.0rem, $weight: 400);
+        color: $color-item;
+        border-bottom: 1px solid $color-border-gray2;
+        margin-top: 12px;
+    }
+
+    >*:hover {
+
+        @include hover-supported() {
+            cursor: pointer;
+            color: $color-title;
+            border-bottom: 1px solid $color-title;
+            transition: all .5s ease-out;
+        }
+        
+    }
+}
+
+.contacts-item-content__item-background {
+    background: $color-background-item3;
+}
+
+.contacts-item-content__item-drop-up-arrow {
+    background-image: url(../img/contacts/accordion_btn_.png);
+}
+
+.contact-city-card {
+    
+}
+
+.contact-city-card__wrapper {
+    border-radius: 20px;
+    border: 1px solid $color-black;
+    background: $color-background-mobile;
+    padding: 17px 76px 29px 35px;
+}
+
+.contact-city-card__key-value {
+    display: flex;
+    padding-bottom: 20px;
+}
+.contact-city-card__key {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    >* {
+        color: $color-black;
+        @include font($height: 4.0rem, $weight: 400);
+        @extend %font-primary;
+    }
+}
+
+
+
+.contact-city-card__value {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: flex-start;
+    >* {
+        color: $color-title;
+        @include font($height: 4.0rem, $weight: 400);
+        @extend %font-primary;
+        padding-left: 14px;
+
+    }
+}
+
+.contact-city-card__button {
+    background: $color-background-mobile;
+    padding: 7px 0;
+    border: 1px solid $color-secondary;
+    @extend %font-primary;
+    @include font($size: 1.0rem, $height: 1.3rem, $weight: 700);
+    color: $color-title;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    width: 122px;
+    height: 26px;
+    text-align: center;
+    margin-left: 127px;
 }

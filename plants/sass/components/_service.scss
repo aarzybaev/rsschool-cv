@@ -225,12 +225,6 @@
         color: $color-white;
     }
 
-    /* &:hover {
-        background: $color-secondary;
-        color: $color-white;
-        @extend %transition;
-    }  */
-
     @include hover-supported() {
         background: $color-secondary;
         color: $color-white;
