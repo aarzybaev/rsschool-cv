@@ -107,6 +107,7 @@ accordion.addEventListener('click', (e) => {
         e.target.parentElement.classList.toggle('prices-item-content-background-color');
         e.target.classList.toggle('drop-up-arrow');
 
+        //console.log(e.target);
         if(!e.target.parentElement.children[1].hidden) {
             for (let item of dataPrices) {
                 if(item.dataset.price != dataPriceCurr) {
@@ -149,6 +150,8 @@ const city = {
 let contactItem = document.querySelector('.contacts-item-content');
 let contactListWrapper = document.querySelector('.contacts-item-content__data');
 let contactCityCard = document.querySelector('.contact-city-card');
+let contactImg = document.querySelector('.contacts__img');
+let contactCity = document.querySelector('.contacts__city');
 
 contactItem.addEventListener('click', (e) => {
     if(e.target.tagName == 'SPAN') {
@@ -186,6 +189,29 @@ e.target.parentElement.previousElementSibling.classList.add('contacts-item-conte
 contactListWrapper.hidden = true;
 contactCityCard.innerHTML = cardTemplate;
 contactCityCard.hidden = false;
+
+        if(window.innerWidth <= 380 && !contactImg.hidden) {
+            contactImg.style.marginTop = '';
+            contactCity.style.marginTop = '';
+
+            contactImg.hidden = true;
+            contactCityCard.style.marginBottom = '23px';
+            contactCity.style.paddingTop = '48px';
+            contactCity.style.paddingBottom = '10px';
+
+        }
+
+        if(window.innerWidth == 768) {
+            contactImg.hidden = false;
+            contactCityCard.style.marginBottom = '';
+            contactCity.style.paddingTop = '';
+            contactCity.style.paddingBottom = '';
+
+            contactImg.style.marginTop = '14px';
+            contactCity.style.marginTop = '60px';
+
+        }
+
 
     }
 

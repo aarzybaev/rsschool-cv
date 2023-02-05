@@ -407,12 +407,12 @@ button {
   .contacts__img {
     padding: 0px;
     order: 3;
-    margin: 249px 0 0 17px;
+    margin: 190px 0 0 17px;
   }
 }
 @media (max-width: 380px) {
   .contacts__img {
-    margin: 133px 2px 0 0px;
+    margin: 84px 2px 0 0px;
   }
 }
 
@@ -429,7 +429,7 @@ button {
 }
 @media (max-width: 380px) {
   .contacts__title {
-    margin: 0;
+    margin: 0 0 0 0;
   }
 }
 
@@ -459,7 +459,7 @@ button {
 }
 @media (max-width: 768px) {
   .contacts__city {
-    margin: 100px 0 0 0;
+    margin: 96px 0 0 0;
     padding: 0;
     order: 2;
   }
@@ -467,7 +467,7 @@ button {
 @media (max-width: 380px) {
   .contacts__city {
     margin: 0;
-    padding: 88px 0 0 0;
+    padding: 86px 0 0 0;
   }
 }
 
@@ -597,22 +597,47 @@ button {
   background-image: url(../img/contacts/accordion_btn_.png);
 }
 
+.contact-city-card {
+  padding-top: 47px;
+}
+@media (max-width: 768px) {
+  .contact-city-card {
+    padding-top: 61px;
+  }
+}
+@media (max-width: 380px) {
+  .contact-city-card {
+    padding-top: 49px;
+    padding-right: 9px;
+    padding-left: 9px;
+  }
+}
+
 .contact-city-card__wrapper {
   border-radius: 20px;
   border: 1px solid #000;
   background: #EDF2EC;
   padding: 17px 76px 29px 35px;
 }
+@media (max-width: 380px) {
+  .contact-city-card__wrapper {
+    padding: 23px 35px 23px 36px;
+  }
+}
 
 .contact-city-card__key-value {
   display: flex;
   padding-bottom: 20px;
 }
-
 .contact-city-card__key {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+@media (max-width: 380px) {
+  .contact-city-card__key {
+    flex-basis: 40%;
+  }
 }
 .contact-city-card__key > * {
   color: #000;
@@ -623,11 +648,22 @@ button {
   letter-spacing: 0rem;
 }
 
+@media (max-width: 380px) {
+  .contact-city-card__address-key {
+    line-height: 2rem;
+  }
+}
+
 .contact-city-card__value {
   display: flex;
   flex-direction: column;
   align-content: space-between;
   align-items: flex-start;
+}
+@media (max-width: 380px) {
+  .contact-city-card__value {
+    flex-grow: 1;
+  }
 }
 .contact-city-card__value > * {
   color: #717171;
@@ -637,6 +673,17 @@ button {
   line-height: 4rem;
   letter-spacing: 0rem;
   padding-left: 14px;
+}
+@media (max-width: 380px) {
+  .contact-city-card__value > * {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact-city-card__address-value {
+    line-height: 2rem;
+  }
 }
 
 .contact-city-card__button {
@@ -656,6 +703,11 @@ button {
   height: 26px;
   text-align: center;
   margin-left: 127px;
+}
+@media (max-width: 380px) {
+  .contact-city-card__button {
+    margin-left: 49px;
+  }
 }
 
 .prices__wrapper {
