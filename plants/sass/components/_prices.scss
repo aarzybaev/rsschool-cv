@@ -1,0 +1,258 @@
+.prices__wrapper {
+    padding: 40px 109px 0px 109px;
+    
+    @include media-tablet {
+        padding: 40px 50px 0px 50px;
+    }
+
+    @include media-mobile {
+        padding: 19px 79px 45px 76px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @include media-mobilesmall {
+        padding: 19px  0 0 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.prices__content {
+    padding-right: 279px;
+    
+    @include media-tablet {
+        padding: 0;
+    }
+
+    @include media-mobile {
+        margin-left: 3px;
+    }
+}
+
+.prices-item-content {    
+    border-radius: 20px;
+    border: 1px solid $color-border-gray;
+    padding: 33px 41px 32px 41px;
+    :first-child {
+        margin-top: 0;
+    }
+    margin: 60px 0 0 0;
+
+    @include media-tablet {
+        margin-top: 57px;
+    }
+
+    @include media-mobile {
+        width: 224px;
+        height: auto;
+        padding: 29px 22px 23px 22px;
+        margin: 37px 0 0 0;
+    }
+
+    @include media-mobilesmall {
+
+    }
+ }
+
+.prices-item-content__item {
+    width: 248px;
+    list-style: none;
+    border-radius: 20px;
+    background: $color-background;
+    margin: 32px 0 0;
+    @extend %font-primary;
+    @include font($size: 2.0rem, $weight: 700);
+    color: $color-black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px 12px 40px;
+
+    /* &:hover {
+        cursor: pointer;
+    } */
+
+    @include media-mobile {
+        width: 180px;
+        @include font($size: 1.5rem, $weight: 700, $height: 2.0rem);
+        background: $color-background-mobile;
+        margin: 16px 0 0 0;
+        padding: 15px 38px 15px 30px;
+    }
+}
+
+.prices__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @include media-tablet {
+        padding-top: 99px;
+    }
+
+    @include media-mobile {
+        justify-content: center;
+        align-items: center;
+        padding: 20px  0 0 0;
+    }
+
+    @include media-mobilesmall {
+        padding: 20px;
+    }
+}
+
+.prices-item-content__icon {
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/prices/accordion_btn.png);
+    display: inline-block;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+}
+
+.prices__title-content {
+    @extend %font-primary;
+    @include font($size: 4.0rem, $weight: 700, $height: 4.8rem);
+    color: $color-black;
+
+    @include media-tablet {
+        @include font($size: 3.5rem, $weight: 700, $height: 4.2rem);
+        padding-left: 15px;
+    }
+
+    @include media-mobile {
+        @include font($size: 2.5rem, $weight: 700, $height: 3.0rem);
+        text-align: center;
+        padding: 0;
+    }
+}
+
+.prices__title-contact {
+    @extend %font-primary;
+    @include font($size: 4.0rem, $weight: 700, $height: 4.8rem);
+    color: $color-black;
+    &-colored {
+        color: $color-primary;
+    }
+    text-align: end;
+    padding-left: 50px;
+
+    @include media-tablet {
+        @include font($size: 2.5rem, $weight: 700, $height: 3.5rem);
+    }
+
+    @include media-mobile {
+        padding: 0;
+        text-align: center;
+        @include font($size: 2.0rem, $weight: 700, $height: 3.5rem);
+
+    }
+}
+
+.prices__img {
+    width: 152px;
+    height: 175px;
+    display: inline-block;
+    background-image: url(../img/prices/leafs.png);
+    margin-top: 39px;
+    margin-bottom: 115px;
+
+    @include media-tablet {
+        margin-top: 30px;
+        margin-bottom: 92px;
+    }
+
+    @include media-mobile {
+        display: none;
+    }
+}
+
+.prices__button {
+    width: 162px;
+    height: 50px;
+    text-align: center;
+    @extend %font-secondary;
+    @include font($size: 2.0rem, $weight: 700, $height: 2.6rem);
+    background: $color-white;
+    border: 1px solid $color-secondary;
+    color: $color-secondary;
+    border-radius: 5px;
+    //padding: 14px 0px;
+    margin-top: 45px;
+    
+    &:hover {
+        background: $color-secondary;
+        color: $color-white;
+    }
+
+    @include media-tablet {
+        margin-top: 29px;
+    }
+
+    @include media-mobile {
+        width: 121px;
+        height: 35px;
+        @include font($size: 1.5rem, $weight: 700, $height: 1.9rem);
+        padding: 8px 0 8px 0;
+        margin: 20px  0 0 0;
+
+    }
+}
+
+#price {
+	scroll-behavior: smooth;
+}
+
+.prices-item-content__data {
+    //display: flex;
+    //flex-direction: column;
+    width: 248px;
+    padding: 12px 0 0 0;
+    //background: $color-background-item;
+}
+
+.prices-item-content__description {
+    @include font($size: 1.0rem, $weight: 300);
+    color: $color-title;
+    border-top: 1px solid $color-line;
+    padding-top: 6px;
+}
+
+.prices-item-content__cost {
+    @include font($size: 1.2rem, $weight: 400, $height: 2.0rem);
+
+}
+
+.prices-item-content__cost-usd {
+    @include font($size: 1.6rem, $weight: 700, $height: 2.0rem);
+    color: $color-secondary;
+}
+
+.prices-item-content__button {
+    width: 86px;    
+    border-radius: 10px;
+    color: $color-title;
+    @include font($size: 1.4rem, $weight: 700, $height: 2.0rem);
+    background: $color-white;
+    border: 1px solid $color-white;
+    margin-top: 12px;
+    padding: 3px 20px;
+    text-decoration: none;
+}
+
+.prices-item-content-price-button__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.prices-item-content-background-color {
+    background: #D6E7D2;
+}
+
+.drop-up-arrow {
+    background-image: url(../img/prices/accordion_btn_.png);
+
+}

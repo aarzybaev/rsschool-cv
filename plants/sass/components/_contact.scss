@@ -1,0 +1,298 @@
+.contacts {
+    background: $color-background;
+}
+.contacts__wrapper {
+    padding: 0 109px;
+    display: flex;
+    
+    @include media-tablet {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include media-mobile {
+        background: $color-background-mobile;
+        padding: 25px 42px 0 42px;
+    }
+    
+    @include media-mobilesmall {
+        padding: 25px 25px 0 25px;
+    }
+}
+
+.contacts__img {
+    padding-top: 53px;
+
+    @include media-tablet {
+        padding: 0px;
+        order: 3;
+        margin: 190px 0 0 17px; // 14px
+    }
+
+    @include media-mobile {
+        margin: 84px 2px 0 0px;
+    }
+}
+
+.contacts__title {
+    margin-left: 113px;
+    padding-top: 60px;
+    
+    @include media-tablet {
+        order: 1;
+        margin: 40px 0 0 0;
+        padding: 0;
+    }
+
+    @include media-mobile {
+        margin: 0 0 0 0 ;
+    }
+
+}
+
+.contacts__title-title {
+    text-align: center;
+    @extend %font-secondary;
+    @include font($size: 4.0rem, $weight: 700, $height: 5.2rem);
+    color: $color-primary;
+
+    @include media-mobile {
+        @include font($size: 2.5rem, $weight: 700, $height: 2.2rem);
+
+    }
+}
+
+.contacts__city {
+    padding-top: 148px;
+    margin-left: 69px;
+    flex-grow: 1;
+
+    @include media-tablet {
+        margin: 96px 0 0 0;
+        padding: 0;
+        order: 2;
+    }
+
+    @include media-mobile {
+        margin: 0;
+        padding:  86px 0 0 0;
+    }
+}
+
+.contacts__img-img {
+    width: 400px;
+    height: 497px;
+    background-image: url(../img/contacts/contact_woman.png);
+    display: inline-block;
+    vertical-align: bottom;
+
+    @include media-tablet {
+        width: 200px;
+        height: 248px;
+        background-image: url(../img/contacts/contact_woman-tablet.png);
+        background-repeat: no-repeat;
+        vertical-align: bottom;
+        
+    }
+
+    @include media-mobile {
+        width: 100px;
+        height: 124px;
+        background-image: url(../img/contacts/contact_woman-mobile.png);
+        background-repeat: no-repeat;
+        vertical-align: bottom;
+    }
+}
+
+.contacts-item-content__item {
+    width: 100%;
+    list-style: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @extend %font-primary;
+    @include font($height: 4.0rem);
+    color: $color-title;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 17px 5px 20px;
+    background: $color-background-item;
+    &:hover {
+        cursor: pointer;
+    }
+
+    @include media-tablet {
+        width: 450px;
+        height: 50px;
+        padding: 0 35px 0 20px;
+    }
+
+    @include media-mobile {
+        width: 300px;
+        height: 50px;
+        padding: 0 24px 0 19px;
+    }
+
+    @include media-mobilesmall {
+        width: 250px;
+        height: 50px;
+    }
+}
+
+.contacts-item-content { 
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-item-content__icon {
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/contacts/accordion_btn.png);
+    display: inline-block;
+}
+
+#contacts {
+	scroll-behavior: smooth;
+}
+
+.contacts-item-content__data {
+    //display: block;
+    background: antiquewhite;
+    list-style: none;
+    background: $color-background-item2;
+    padding: 27px 35px 31px 35px;
+    :first-child {
+        margin-top: 0;
+    }
+
+    >* {
+        height: 35px;
+        @include font($height: 4.0rem, $weight: 400);
+        color: $color-item;
+        border-bottom: 1px solid $color-border-gray2;
+        margin-top: 12px;
+    }
+
+    >*:hover {
+
+        @include hover-supported() {
+            cursor: pointer;
+            color: $color-title;
+            border-bottom: 1px solid $color-title;
+            transition: all .5s ease-out;
+        }
+        
+    }
+}
+
+.contacts-item-content__item-background {
+    background: $color-background-item3;
+}
+
+.contacts-item-content__item-drop-up-arrow {
+    background-image: url(../img/contacts/accordion_btn_.png);
+}
+
+.contact-city-card {
+    padding-top: 47px;
+    @include media-tablet {
+        padding-top: 61px;
+
+    }
+    @include media-mobile {
+        padding-top: 49px;
+        padding-right: 9px;
+        padding-left: 9px;
+    }
+}
+
+.contact-city-card__wrapper {
+    border-radius: 20px;
+    border: 1px solid $color-black;
+    background: $color-background-mobile;
+    padding: 17px 76px 29px 35px;
+
+    @include media-mobile {
+        padding: 23px 35px 23px 36px;
+    }
+}
+
+.contact-city-card__key-value {
+    display: flex;
+    padding-bottom: 20px;
+    @include media-mobile {
+    }
+}
+.contact-city-card__key {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include media-mobile {
+        flex-basis: 40%;
+    }
+
+    >* {
+        color: $color-black;
+        @include font($height: 4.0rem, $weight: 400);
+        @extend %font-primary;
+    }
+}
+
+.contact-city-card__address-key {
+    @include media-mobile {
+        line-height: 2.0rem;
+    }
+}
+
+
+.contact-city-card__value {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: flex-start;
+
+    @include media-mobile {
+        //flex-basis: 60%;
+        flex-grow: 1;
+    }
+
+    >* {
+        color: $color-title;
+        @include font($height: 4.0rem, $weight: 400);
+        @extend %font-primary;
+        padding-left: 14px;
+
+        @include media-mobile {
+            padding-left: 0;
+        }
+
+    }
+}
+
+.contact-city-card__address-value {
+    @include media-mobile {
+        line-height: 2.0rem;
+    }
+}
+
+.contact-city-card__button {
+    background: $color-background-mobile;
+    padding: 7px 0;
+    border: 1px solid $color-secondary;
+    @extend %font-primary;
+    @include font($size: 1.0rem, $height: 1.3rem, $weight: 700);
+    color: $color-title;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    width: 122px;
+    height: 26px;
+    text-align: center;
+    margin-left: 127px;
+
+    @include media-mobile {
+    margin-left: 49px;
+    }
+}
+
