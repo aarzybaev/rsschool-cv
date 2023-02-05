@@ -1,8 +1,8 @@
 .prices__wrapper {
-    padding: 40px 109px 120px 109px;
+    padding: 40px 109px 0px 109px;
     
     @include media-tablet {
-        padding: 40px 50px 92px 50px;
+        padding: 40px 50px 0px 50px;
     }
 
     @include media-mobile {
@@ -55,6 +55,7 @@
  }
 
 .prices-item-content__item {
+    width: 248px;
     list-style: none;
     border-radius: 20px;
     background: $color-background;
@@ -63,15 +64,17 @@
     @include font($size: 2.0rem, $weight: 700);
     color: $color-black;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 15px 40px 12px 40px;
 
-    &:hover {
+    /* &:hover {
         cursor: pointer;
-    }
+    } */
 
     @include media-mobile {
+        width: 180px;
         @include font($size: 1.5rem, $weight: 700, $height: 2.0rem);
         background: $color-background-mobile;
         margin: 16px 0 0 0;
@@ -103,9 +106,11 @@
     height: 16px;
     background-image: url(../img/prices/accordion_btn.png);
     display: inline-block;
-    @include media-mobile {
 
+    &:hover {
+        cursor: pointer;
     }
+
 }
 
 .prices__title-content {
@@ -153,9 +158,11 @@
     display: inline-block;
     background-image: url(../img/prices/leafs.png);
     margin-top: 39px;
+    margin-bottom: 115px;
 
     @include media-tablet {
         margin-top: 30px;
+        margin-bottom: 92px;
     }
 
     @include media-mobile {
@@ -173,8 +180,8 @@
     border: 1px solid $color-secondary;
     color: $color-secondary;
     border-radius: 5px;
-    padding: 12px 0px;
-    margin-top: 38px;
+    //padding: 14px 0px;
+    margin-top: 45px;
     
     &:hover {
         background: $color-secondary;
@@ -197,4 +204,55 @@
 
 #price {
 	scroll-behavior: smooth;
+}
+
+.prices-item-content__data {
+    //display: flex;
+    //flex-direction: column;
+    width: 248px;
+    padding: 12px 0 0 0;
+    //background: $color-background-item;
+}
+
+.prices-item-content__description {
+    @include font($size: 1.0rem, $weight: 300);
+    color: $color-title;
+    border-top: 1px solid $color-line;
+    padding-top: 6px;
+}
+
+.prices-item-content__cost {
+    @include font($size: 1.2rem, $weight: 400, $height: 2.0rem);
+
+}
+
+.prices-item-content__cost-usd {
+    @include font($size: 1.6rem, $weight: 700, $height: 2.0rem);
+    color: $color-secondary;
+}
+
+.prices-item-content__button {
+    width: 86px;    
+    border-radius: 10px;
+    color: $color-title;
+    @include font($size: 1.4rem, $weight: 700, $height: 2.0rem);
+    background: $color-white;
+    border: 1px solid $color-white;
+    margin-top: 12px;
+    padding: 3px 20px;
+    text-decoration: none;
+}
+
+.prices-item-content-price-button__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.prices-item-content-background-color {
+    background: #D6E7D2;
+}
+
+.drop-up-arrow {
+    background-image: url(../img/prices/accordion_btn_.png);
+
 }

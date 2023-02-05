@@ -1,9 +1,9 @@
 @import "../node_modules/normalize.css/normalize.css";
-.welcome__button:hover, .service-header__button:hover, .navigation__link:hover {
+.welcome__button:hover, .blur, .navigation__link:hover {
   transition: all 0.3s ease-out;
 }
 
-.footer__data-data, .footer__rss-rss, .welcome__button, .welcome__description, .welcome__title, .service-card__description, .service-card__title, .prices__title-contact, .prices__title-content, .prices-item-content__item, .contacts-item-content__item, .about__description {
+.footer__data-data, .footer__rss-rss, .welcome__button, .welcome__description, .welcome__title, .service-card__description, .service-card__title, .prices__title-contact, .prices__title-content, .prices-item-content__item, .contact-city-card__button, .contact-city-card__value > *, .contact-city-card__key > *, .contacts-item-content__item, .about__description {
   font-family: "Inter", Verdana, sans-serif;
 }
 
@@ -14,11 +14,11 @@
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-size: 1.6rem;
-  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -118,7 +118,7 @@ button {
 }
 
 .hamburger {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 .hamburger > * {
@@ -247,23 +247,24 @@ button {
 }
 @media (max-width: 768px) {
   .about__wrapper {
-    padding: 40px 50px 94px 50px;
+    padding: 0px 50px 94px 50px;
     flex-direction: column;
   }
 }
 @media (max-width: 380px) {
   .about__wrapper {
-    padding: 31px 25px 32px 25px;
+    padding: 0px 25px 32px 25px;
   }
 }
 @media (max-width: 320px) {
   .about__wrapper {
-    padding: 32px 25px;
+    padding: 0px 25px 32px 25px;
   }
 }
 
 .about__text {
   width: 605px;
+  padding-top: 42px;
 }
 @media (max-width: 768px) {
   .about__text {
@@ -274,11 +275,14 @@ button {
   .about__text {
     width: auto;
     margin-bottom: 2px;
+    padding: 31px 0 0 0;
   }
 }
 @media (max-width: 320px) {
   .about__text {
     width: auto;
+    margin-bottom: 2px;
+    padding: 31px 0 0 0;
   }
 }
 
@@ -403,12 +407,12 @@ button {
   .contacts__img {
     padding: 0px;
     order: 3;
-    margin: 249px 0 0 17px;
+    margin: 190px 0 0 17px;
   }
 }
 @media (max-width: 380px) {
   .contacts__img {
-    margin: 133px 2px 0 0px;
+    margin: 84px 2px 0 0px;
   }
 }
 
@@ -425,7 +429,7 @@ button {
 }
 @media (max-width: 380px) {
   .contacts__title {
-    margin: 0;
+    margin: 0 0 0 0;
   }
 }
 
@@ -455,7 +459,7 @@ button {
 }
 @media (max-width: 768px) {
   .contacts__city {
-    margin: 100px 0 0 0;
+    margin: 96px 0 0 0;
     padding: 0;
     order: 2;
   }
@@ -463,7 +467,7 @@ button {
 @media (max-width: 380px) {
   .contacts__city {
     margin: 0;
-    padding: 88px 0 0 0;
+    padding: 86px 0 0 0;
   }
 }
 
@@ -497,13 +501,14 @@ button {
   width: 100%;
   list-style: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
   line-height: 4rem;
   letter-spacing: 0rem;
   color: #717171;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 5px 17px 5px 20px;
@@ -549,12 +554,168 @@ button {
   scroll-behavior: smooth;
 }
 
+.contacts-item-content__data {
+  background: antiquewhite;
+  list-style: none;
+  background: #DCE9D9;
+  padding: 27px 35px 31px 35px;
+}
+.contacts-item-content__data :first-child {
+  margin-top: 0;
+}
+.contacts-item-content__data > * {
+  height: 35px;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0rem;
+  color: #499A18;
+  border-bottom: 1px solid #D9D9D9;
+  margin-top: 12px;
+}
+.contacts-item-content__data > *:hover {
+  /* 
+   * https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer 
+   * coarse: The primary input mechanism includes a pointing device of limited accuracy.
+   */
+}
+@media not all and (pointer: coarse) {
+  .contacts-item-content__data > *:hover:hover {
+    cursor: pointer;
+    color: #717171;
+    border-bottom: 1px solid #717171;
+    transition: all 0.5s ease-out;
+  }
+}
+
+.contacts-item-content__item-background {
+  background: #C1E698;
+}
+
+.contacts-item-content__item-drop-up-arrow {
+  background-image: url(../img/contacts/accordion_btn_.png);
+}
+
+.contact-city-card {
+  padding-top: 47px;
+}
+@media (max-width: 768px) {
+  .contact-city-card {
+    padding-top: 61px;
+  }
+}
+@media (max-width: 380px) {
+  .contact-city-card {
+    padding-top: 49px;
+    padding-right: 9px;
+    padding-left: 9px;
+  }
+}
+
+.contact-city-card__wrapper {
+  border-radius: 20px;
+  border: 1px solid #000;
+  background: #EDF2EC;
+  padding: 17px 76px 29px 35px;
+}
+@media (max-width: 380px) {
+  .contact-city-card__wrapper {
+    padding: 23px 35px 23px 36px;
+  }
+}
+
+.contact-city-card__key-value {
+  display: flex;
+  padding-bottom: 20px;
+}
+.contact-city-card__key {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 380px) {
+  .contact-city-card__key {
+    flex-basis: 40%;
+  }
+}
+.contact-city-card__key > * {
+  color: #000;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0rem;
+}
+
+@media (max-width: 380px) {
+  .contact-city-card__address-key {
+    line-height: 2rem;
+  }
+}
+
+.contact-city-card__value {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: flex-start;
+}
+@media (max-width: 380px) {
+  .contact-city-card__value {
+    flex-grow: 1;
+  }
+}
+.contact-city-card__value > * {
+  color: #717171;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0rem;
+  padding-left: 14px;
+}
+@media (max-width: 380px) {
+  .contact-city-card__value > * {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact-city-card__address-value {
+    line-height: 2rem;
+  }
+}
+
+.contact-city-card__button {
+  background: #EDF2EC;
+  padding: 7px 0;
+  border: 1px solid #E06733;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.3rem;
+  letter-spacing: 0rem;
+  color: #717171;
+  text-decoration: none;
+  border-radius: 5px;
+  display: block;
+  width: 122px;
+  height: 26px;
+  text-align: center;
+  margin-left: 127px;
+}
+@media (max-width: 380px) {
+  .contact-city-card__button {
+    margin-left: 49px;
+  }
+}
+
 .prices__wrapper {
-  padding: 40px 109px 120px 109px;
+  padding: 40px 109px 0px 109px;
 }
 @media (max-width: 768px) {
   .prices__wrapper {
-    padding: 40px 50px 92px 50px;
+    padding: 40px 50px 0px 50px;
   }
 }
 @media (max-width: 380px) {
@@ -609,6 +770,7 @@ button {
   }
 }
 .prices-item-content__item {
+  width: 248px;
   list-style: none;
   border-radius: 20px;
   background: #f1f2ec;
@@ -620,15 +782,17 @@ button {
   letter-spacing: 0rem;
   color: #000;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-}
-.prices-item-content__item:hover {
-  cursor: pointer;
+  padding: 15px 40px 12px 40px;
+  /* &:hover {
+      cursor: pointer;
+  } */
 }
 @media (max-width: 380px) {
   .prices-item-content__item {
+    width: 180px;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
@@ -669,6 +833,10 @@ button {
   background-image: url(../img/prices/accordion_btn.png);
   display: inline-block;
 }
+.prices-item-content__icon:hover {
+  cursor: pointer;
+}
+
 .prices__title-content {
   font-size: 4rem;
   font-style: normal;
@@ -739,10 +907,12 @@ button {
   display: inline-block;
   background-image: url(../img/prices/leafs.png);
   margin-top: 39px;
+  margin-bottom: 115px;
 }
 @media (max-width: 768px) {
   .prices__img {
     margin-top: 30px;
+    margin-bottom: 92px;
   }
 }
 @media (max-width: 380px) {
@@ -764,8 +934,7 @@ button {
   border: 1px solid #E06733;
   color: #E06733;
   border-radius: 5px;
-  padding: 12px 0px;
-  margin-top: 38px;
+  margin-top: 45px;
 }
 .prices__button:hover {
   background: #E06733;
@@ -794,6 +963,68 @@ button {
   scroll-behavior: smooth;
 }
 
+.prices-item-content__data {
+  width: 248px;
+  padding: 12px 0 0 0;
+}
+
+.prices-item-content__description {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1rem;
+  letter-spacing: 0rem;
+  color: #717171;
+  border-top: 1px solid #AEA1A1;
+  padding-top: 6px;
+}
+
+.prices-item-content__cost {
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0rem;
+}
+
+.prices-item-content__cost-usd {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0rem;
+  color: #E06733;
+}
+
+.prices-item-content__button {
+  width: 86px;
+  border-radius: 10px;
+  color: #717171;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0rem;
+  background: #fff;
+  border: 1px solid #fff;
+  margin-top: 12px;
+  padding: 3px 20px;
+  text-decoration: none;
+}
+
+.prices-item-content-price-button__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.prices-item-content-background-color {
+  background: #D6E7D2;
+}
+
+.drop-up-arrow {
+  background-image: url(../img/prices/accordion_btn_.png);
+}
+
 .service {
   background: #f1f2ec;
 }
@@ -804,7 +1035,7 @@ button {
 }
 
 .service__wrapper {
-  padding: 90px 109px 66px 109px;
+  padding: 90px 109px 90px 109px;
 }
 @media (max-width: 768px) {
   .service__wrapper {
@@ -1060,14 +1291,21 @@ button {
   background: #f1f2ec;
   border: 1px solid #E06733;
   border-radius: 5px;
+  /* 
+   * https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer 
+   * coarse: The primary input mechanism includes a pointing device of limited accuracy.
+   */
 }
 .service-header__button-active {
   background: #E06733;
   color: #fff;
 }
-.service-header__button:hover {
-  background: #E06733;
-  color: #fff;
+@media not all and (pointer: coarse) {
+  .service-header__button:hover {
+    background: #E06733;
+    color: #fff;
+    transition: all 0.5s ease-out;
+  }
 }
 @media (max-width: 380px) {
   .service-header__button {
@@ -1082,10 +1320,18 @@ button {
     text-align: center;
     background: #EDF2EC;
   }
+  .service-header__button-active {
+    background: #E06733;
+    color: #fff;
+  }
 }
 
 #service {
   scroll-behavior: smooth;
+}
+
+.blur {
+  filter: blur(2px);
 }
 
 .welcome {
