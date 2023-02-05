@@ -1,12 +1,11 @@
 html {
     font-size: 10px;
     scroll-behavior: smooth;
-    
+    overflow-x: hidden;
 }
 
 body {
-    font-size: 1.6rem;
-    overflow-x: hidden;
+    font-size: 1.6rem;    
 }
 
 h1, h2, h3 {

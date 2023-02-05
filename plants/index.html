@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plants p2</title>
+    <title>Plants p3</title>
     <link rel="shortcut icon" href="img/ico/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,14 +65,14 @@
             <div class="service-header">
                 <h2 class="service-header__title"><a id="service"></a>Service and our projects</h2>
                 <span class="service-header__button-wrapper">
-                    <button class="service-header__button">Gardens</button>
-                    <button class="service-header__button">Lawn</button>
-                    <button class="service-header__button">Planting</button>
+                    <button class="service-header__button" data-button="garden">Gardens</button>
+                    <button class="service-header__button" data-button="lawn">Lawn</button>
+                    <button class="service-header__button" data-button="planting">Planting</button>
                 </span>            
             </div>
             <div class="layout-3-column service__wrapper">
                 <div class="service-card">
-                    <div class="service-card__wrapper">
+                    <div class="service-card__wrapper" data-service-card="garden">
                         <span class="service-card__img service-card__img-garden-care-1"></span>
                         <div class="service-card__text-content">
                             <h3 class="service-card__title">Garden care</h3>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-card__wrapper">
+                    <div class="service-card__wrapper" data-service-card="planting">
                         <span class="service-card__img service-card__img-planting-1"></span>
                         <div class="service-card__text-content">
                             <h3 class="service-card__title">Planting</h3>
@@ -91,7 +91,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-card__wrapper">
+                    <div class="service-card__wrapper" data-service-card="lawn">
                         <span class="service-card__img service-card__img-lawn-care"></span>
                         <div class="service-card__text-content">
                             <h3 class="service-card__title">Lawn care</h3>
@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-card__wrapper">
+                    <div class="service-card__wrapper" data-service-card="planting">
                         <span class="service-card__img service-card__img-planting-2"></span>
                         <div class="service-card__text-content">
                             <h3 class="service-card__title">Planting</h3>
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-card__wrapper">
+                    <div class="service-card__wrapper" data-service-card="garden">
                         <span class="service-card__img service-card__img-garden-care-2"></span>
                         <div class="service-card__text-content">
                             <h3 class="service-card__title">Garden care</h3>
@@ -120,7 +120,7 @@
                     </div>
                 </div>
                 <div class="service-card">
-                    <div class="service-card__wrapper">
+                    <div class="service-card__wrapper" data-service-card="planting">
                         <span class="service-card__img service-card__img-planting-3"></span>
                         <div class="service-card__text-content">
                             <h3 class="service-card__title">Planting</h3>
@@ -137,9 +137,42 @@
                 <div class="prices__content">
                     <h2 class="prices__title-content"><a id="price"></a>Prices</h2>
                     <ul class="prices-item-content">
-                        <li class="prices-item-content__item">Basics <span class="prices-item-content__icon"></span></li>
-                        <li class="prices-item-content__item">Standard <span class="prices-item-content__icon"></span></li>
-                        <li class="prices-item-content__item">Pro care <span class="prices-item-content__icon"></span></li>
+                        <li class="prices-item-content__item">Basics<span class="prices-item-content__icon"></span>
+                            <div class="prices-item-content__data" data-price="basics" hidden>
+                                <p class="prices-item-content__description">
+                                    Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                </p>
+                                <div class="prices-item-content-price-button__wrapper">
+                                    <span class="prices-item-content__cost"><span class="prices-item-content__cost-usd">$15</span> / per hour</span>
+                                    <a href="#contacts" class="prices-item-content__button">Order</a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="prices-item-content__item">Standard<span class="prices-item-content__icon"></span>
+                            <div class="prices-item-content__data" data-price="standard" hidden>
+                                <p class="prices-item-content__description">
+                                    Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                </p>
+                                <div class="prices-item-content-price-button__wrapper">
+                                    <span class="prices-item-content__cost"><span class="prices-item-content__cost-usd">$25</span> / per hour</span>
+                                    <a href="#contacts" class="prices-item-content__button">Order</a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="prices-item-content__item">Pro care<span class="prices-item-content__icon"></span>
+                            <div class="prices-item-content__data" data-price="procare" hidden>
+                                <p class="prices-item-content__description">
+                                    Release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                </p>
+                                <div class="prices-item-content-price-button__wrapper">
+                                    <span class="prices-item-content__cost"><span class="prices-item-content__cost-usd">$35</span> / per hour</span>
+                                    <a href="#contacts" class="prices-item-content__button">Order</a>
+                                </div>
+                            </div>
+                        </li>
+                        
                     </ul>
                 </div>
                 <div class="prices__contact">
@@ -157,9 +190,15 @@
                 <div class="contacts__title"><h2 class="contacts__title-title"><a id="contacts"></a>Contact us</h2></div>
                 <div class="contacts__city">
                     <ul class="contacts-item-content">
-                        <li class="contacts-item-content__item">City <span class="contacts-item-content__icon"></span></li>
+                        <li class="contacts-item-content__item">City<span class="contacts-item-content__icon"></span></li>
+                            <ul class="contacts-item-content__data" hidden>
+                                <li data-city="canandaigua">Canandaigua, NY</li>
+                                <li data-city="newyork">New York City</li>
+                                <li data-city="yonkers">Yonkers, NY</li>
+                                <li data-city="sherrill">Sherrill, NY</li>
+                            </ul>                   
                     </ul>
-                </div>
+                    <div class="contact-city-card"></div>
             </div>
         </div>
     </section>

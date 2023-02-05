@@ -5,7 +5,7 @@
     }
 }
 .service__wrapper {
-    padding: 90px 109px 66px 109px;
+    padding: 90px 109px 90px 109px;
 
     @include media-tablet {
         padding: 40px 50px 34px 50px;
@@ -199,10 +199,8 @@
     justify-content: space-between;
 
     @include media-mobile {
-        
         width: 252px;
         height: 83px;
-        //border: 1px dotted red;
         flex-wrap: wrap;
         align-content: space-between;
         padding: 5px 0 0 0;
@@ -221,14 +219,16 @@
     background: $color-background;
     border: 1px solid $color-secondary;
     border-radius: 5px;
+
     &-active {
         background: $color-secondary;
         color: $color-white;
     }
-    &:hover {
+
+    @include hover-supported() {
         background: $color-secondary;
         color: $color-white;
-        @extend %transition;
+        transition: all .5s ease-out;
     }
 
     @include media-mobile {
@@ -239,6 +239,10 @@
         text-align: center;
         background: $color-background-mobile;
 
+        &-active {
+            background: $color-secondary;
+            color: $color-white;
+        }
 
     }
 
@@ -246,4 +250,9 @@
 
 #service {
 	scroll-behavior: smooth;
+}
+
+.blur {
+    filter: blur(2px);
+    @extend %transition;
 }
