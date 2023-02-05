@@ -228,9 +228,6 @@ contactCityCard.hidden = false;
 
 
 
-
-
-
 // Functions
 
 function addRemoveClass(className, classOperation, filter) {
